@@ -4,7 +4,8 @@
     box-shadow: inset 0px -0.5px 0px #e6e6e6;
     position: sticky;
     top: 0;
-    z-index: 999999;
+    z-index: 2000;
+    width: 101.31%;
 }
 
 .header-top .inner-wrap {
@@ -187,14 +188,6 @@
     box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
 }
 
-/* .modal.right .modal-body {
-    overflow-y: auto;
-}
-
-.modal-backdrop {
-    display: none;
-} */
-
 .header-top .modal.right .modal-header {
     display: flex;
     align-items: center;
@@ -324,6 +317,9 @@
 
 /* End Modal shopping */
 
+.modal {
+    z-index: 2001;
+}
 
 /* End Header-top */
 
