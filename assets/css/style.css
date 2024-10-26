@@ -5,7 +5,7 @@
     position: sticky;
     top: 0;
     z-index: 2000;
-    width: 101.31%;
+    width: 102%;
 }
 
 .header-top .inner-wrap {
@@ -58,6 +58,9 @@
     font-size: 20px;
     cursor: pointer;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -237,8 +240,8 @@
 }
 
 .header-top .modal.right .inner-product img {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    object-fit: contain;
 }
 
 .header-top .modal.right .inner-product .inner-gia {
@@ -301,17 +304,15 @@
     color: var(--color-bg2);
 }
 
-.header-top .modal.right .inner-thanh-toan {
+.header-top .modal.right a {
     background: var(--color-bg2);
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
     margin: auto;
-}
-
-.header-top .modal.right .inner-thanh-toan a {
     color: #fff;
+    display: inline-block;
 
 }
 
@@ -389,7 +390,8 @@
 /* Banner */
 
 .Banner {
-    padding: 10px 0;
+    padding-top: 60px;
+    padding-bottom: 10px;
 }
 
 .Banner img {
@@ -397,6 +399,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* End Banner */
@@ -404,7 +407,7 @@
 /* Service */
 
 .Service {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .Service .inner-item {
@@ -438,7 +441,7 @@
 /* Products */
 
 .Products {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 0;
 }
 
@@ -841,3 +844,234 @@
 
 
 /* End Footer-bottom */
+
+
+/* Account */
+
+.Account {
+    padding: 70px 0;
+}
+
+.Account .inner-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Account .inner-desc {
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dae2e6;
+    margin-bottom: 10px;
+}
+
+.Account form {
+    padding: 20px;
+    border: 1px solid #dae2e6;
+}
+
+.Account form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.Account .form-control:focus {
+    border-color: var(--color-bg2);
+    box-shadow: none;
+}
+
+.Account .form-group {
+    margin-bottom: 10px;
+}
+
+.Account .form-group.cach-duoi {
+    margin-bottom: 85px;
+}
+
+.Account .button {
+    background: var(--color-bg2);
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.Account .button i {
+    margin-right: 5px;
+}
+
+/* ThanhToan */
+
+.ThanhToan {
+    padding: 20px;
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.ThanhToan .inner-icon {
+    font-size: 20px;
+    color: var(--color-text);
+    margin-left: 5px;
+    float: left;
+}
+
+.ThanhToan .inner-icon i {
+    color: var(--color-text);
+}
+
+.ThanhToan .inner-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* ThongTin */
+
+.ThongTin {
+    padding-top: 30px;
+    padding-bottom: 0;
+    background: #F5F5F5;
+}
+
+.ThongTin .inner-tt {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ThongTin .inner-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 3%);
+}
+
+.ThongTin .inner-gth {
+    display: flex;
+}
+
+.ThongTin .inner-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.ThongTin .inner-ten {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ThongTin .inner-sl {
+    font-size: 15px;
+}
+
+.ThongTin .inner-gia {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-bg2);
+}
+
+.ThongTin .inner-tien {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ThongTin .inner-tientong {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-top: 1px solid var(--color-bg2);
+    padding: 20px 0;
+}
+
+.ThongTin .inner-tien .inner-th {
+    font-size: 15px;
+}
+
+.ThongTin .inner-tien .inner-th span {
+    font-size: 13px;
+    color: var(--color-bg2);
+}
+
+.ThongTin .inner-tien .inner-st {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ThongTin .inner-tien .inner-pvc {
+    font-size: 15px;
+}
+
+.ThongTin .inner-tientong .inner-tong {
+    font-size: 16px;
+}
+
+.ThongTin .inner-tientong .inner-total {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-bg2);
+}
+
+.ThongTin .button {
+    background: var(--color-bg2);
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ThongTin label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ThongTin input {
+    font-size: 15px;
+}
+
+.ThongTin input:hover {
+    border-color: var(--color-bg2);
+}
+
+.ThongTin .form-control:focus {
+    border-color: var(--color-bg2);
+    box-shadow: none;
+}
+
+.ThongTin textarea {
+    font-size: 15px;
+    height: 80px;
+}
+
+.ThongTin textarea:hover {
+    border-color: var(--color-bg2);
+}
+
+.ThongTin textarea.form-control:focus {
+    border-color: var(--color-bg2);
+    box-shadow: none;
+}
+
+/* End ThongTin */
+
+/* End ThanhToan */

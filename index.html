@@ -35,9 +35,9 @@
         <div class="inner-middle">
           <form action="" class="inner-find">
             <input type="text" placeholder="Tìm Kiếm món ăn...">
-            <button class="inner-button-find">
+            <a href="#" class="inner-button-find">
               <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            </a>
           </form>
         </div>
 
@@ -55,7 +55,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal"><i
                     class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalCenter-1"><i
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal-2"><i
                     class="fa-solid fa-user-plus"></i>Đăng kí</a>
               </div>
             </a>
@@ -110,22 +110,51 @@
       </div>
     </div>
 
-    <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog"
-      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade modal-form" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <h5 class="inner-title">Đăng ký tài khoản</h5>
+            <p class="inner-desc">Đăng ký thành viên để mua hàng và nhận những ưu đãi đặc biệt từ chúng tôi</p>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="name">Tên đầy đủ</label>
+                    <input type="text" id="name" class="form-control" placeholder="VD: Thành Đại">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="sdt2">Số điện thoại</label>
+                    <input type="text" id="sdt2" class="form-control" placeholder="Nhập số điện thoại">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="mk2">Mật khẩu</label>
+                    <input type="password" id="mk2" class="form-control" placeholder="Nhập mật khẩu">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="nhapmk">Nhập lại Mật khẩu</label>
+                    <input type="password" id="nhapmk" class="form-control" placeholder="Nhập lại mật khẩu">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="button" onclick="dangKi()">
+                    Đăng kí
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -150,7 +179,7 @@
           <div class="modal-body">
             <div class="cart-item ">
               <div class="inner-product">
-                <img src="https://via.placeholder.com/50" alt="Product 1">
+                <img src="assets/img/products/nam-dui-ga-chay-toi.jpeg" alt="Product 1">
                 <div class="inner-gia">200.000 đ</div>
               </div>
               <div class="inner-info">
@@ -164,7 +193,7 @@
             </div>
             <div class="cart-item ">
               <div class="inner-product">
-                <img src="https://via.placeholder.com/50" alt="Product 1">
+                <img src="assets/img/products/nam-dui-ga-chay-toi.jpeg" alt="Product 2">
                 <div class="inner-gia">100.000 đ</div>
               </div>
               <div class="inner-info">
@@ -182,9 +211,7 @@
               <div class="inner-text-tong">Tổng tiền:</div>
               <div class="inner-gia-tong">300.000 đ</div>
             </div>
-            <div class="inner-thanh-toan">
-              <a href="Products.html" class="inner-tt">Thanh toán</a>
-            </div>
+            <a href="thanhtoan.html" class="inner-tt">Thanh toán</a>
           </div>
         </div>
       </div>
@@ -242,6 +269,8 @@
 
   <!-- End Banner -->
 
+  <!-- Service -->
+
   <div class="Service">
     <div class="container">
       <div class="row">
@@ -294,6 +323,7 @@
 
   </div>
 
+  <!-- End Service -->
 
   <!-- Products -->
 
@@ -725,33 +755,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
 
-  <script>
-    document.querySelectorAll('.inner-img a').forEach(function (anchor) {
-      anchor.addEventListener('click', function (event) {
-        event.preventDefault();
-
-      });
-    });
-
-    function thanhToan() {
-      alert("Giỏ hàng đã được thêm vào");
-    }
-
-    let lastScrollY = window.scrollY;
-    const headerBottom = document.querySelector('.header-bottom');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > lastScrollY) {
-        // Khi cuộn xuống
-        headerBottom.classList.add('hide');
-        headerBottom.classList.remove('show');
-      } else {
-        // Khi cuộn lên
-        headerBottom.classList.add('show');
-        headerBottom.classList.remove('hide');
-      }
-      lastScrollY = window.scrollY;
-    });
+  <script src="assets/js/main.js"></script>
   </script>
 
 </body>
