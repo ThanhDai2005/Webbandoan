@@ -246,7 +246,7 @@
 
 .header-top .modal.right .inner-product .inner-gia {
     color: #666666;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -360,7 +360,7 @@
 
 .header-bottom .inner-menu ul li a {
     color: var(--color-text);
-    padding: 15px 20px;
+    padding: 15px 25px;
     display: inline-block;
     font-size: 15px;
     position: relative;
@@ -493,7 +493,7 @@
 }
 
 .Products .inner-ten {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -530,6 +530,12 @@
 
 .Products .modal-header .inner-hinh img {
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.Products .modal-content {
+    border: none;
 }
 
 .Products .modal-header .close {
@@ -586,6 +592,7 @@
 
 .Products .modal-body .inner-desc {
     font-size: 15px;
+    margin: 0;
 }
 
 .Products .modal-footer {
@@ -595,6 +602,7 @@
 
 .Products .modal-footer .inner-giaca .inner-chu {
     font-size: 13px;
+    color: #808080;
 }
 
 .Products .modal-footer .inner-giaca .inner-so {
@@ -687,18 +695,18 @@
 .Footer-top .inner-text .inner-chu1 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-transform: uppercase;
 }
 
 .Footer-top .inner-text .inner-chu2 {
     color: #666666;
-    font-size: 14px;
+    font-size: 15px;
 
 }
 
 .Footer-top .inner-form input {
-    padding: 13px 25px;
+    padding: 13px 35px;
     border-radius: 45px;
     border: 1px solid #ccc;
     outline: none;
@@ -708,7 +716,7 @@
 .Footer-top .inner-form button {
     color: #fff;
     background: var(--color-bg2);
-    padding: 13px 35px;
+    padding: 13px 45px;
     border-radius: 45px;
     border: none;
     outline: none;
@@ -753,7 +761,7 @@
 }
 
 .Footer-middle .inner-desc {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 18px;
 }
 
@@ -794,7 +802,7 @@
 
 .Footer-middle ul a {
     color: #2C2C2C;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .Footer-middle ul a i {
@@ -820,7 +828,7 @@
 
 
 .Footer-middle .inner-contact .inner-diachi .inner-chu1 {
-    font-size: 14.5px;
+    font-size: 15px;
 }
 
 .Footer-middle .inner-contact .inner-diachi .inner-chu2 {
