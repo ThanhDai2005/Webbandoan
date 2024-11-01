@@ -1,40 +1,59 @@
 document.querySelectorAll('.inner-img a').forEach(function (anchor) {
-    anchor.addEventListener('click', function (event) {
-        event.preventDefault();
+  anchor.addEventListener('click', function (event) {
+    event.preventDefault();
 
-    });
+  });
 });
 
 function dangKi() {
-    alert("Đăng kí thành công");
+  alert("Đăng kí thành công");
 }
 
 function thanhToan() {
-    alert("Giỏ hàng đã được thêm vào");
+  alert("Món ăn đã được thêm vào giỏ hàng !");
 }
 
 let lastScrollY = window.scrollY;
 const headerBottom = document.querySelector('.header-bottom');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > lastScrollY) {
-        headerBottom.classList.add('hide');
-        headerBottom.classList.remove('show');
-    } else {
-        headerBottom.classList.add('show');
-        headerBottom.classList.remove('hide');
-    }
-    lastScrollY = window.scrollY;
+  if (window.scrollY > lastScrollY) {
+    headerBottom.classList.add('hide');
+    headerBottom.classList.remove('show');
+  } else {
+    headerBottom.classList.add('show');
+    headerBottom.classList.remove('hide');
+  }
+  lastScrollY = window.scrollY;
 });
 
 function capNhat() {
-    alert("Cập nhật thông tin thành công !");
+  alert("Cập nhật thông tin thành công !");
 }
 
 function thayDoi() {
-    alert("Đổi mật khẩu thành công !");
+  alert("Đổi mật khẩu thành công !");
 }
 
 function tinhTien() {
-    alert("Đặt hàng thành công !");
+  alert("Thanh toán thành công !");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy tất cả các nút accordion
+  const accordionButtons = document.querySelectorAll('.PhuongThuc .btn');
+
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      // Xóa lớp grayscale khỏi tất cả các nút
+      accordionButtons.forEach(btn => btn.classList.remove('grayscale'));
+
+      // Áp dụng lớp grayscale cho tất cả các nút trừ nút đang được nhấn
+      accordionButtons.forEach(btn => {
+        if (btn !== this) {
+          btn.classList.add('grayscale');
+        }
+      });
+    });
+  });
+});

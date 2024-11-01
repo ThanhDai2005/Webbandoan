@@ -304,16 +304,35 @@
     color: var(--color-bg2);
 }
 
-.header-top .modal.right a {
+.header-top .modal.right .inner-nut {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top .modal.right .inner-nut .inner-tm {
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 2px solid #000;
+    margin-right: 5px;
+}
+
+.header-top .modal.right .inner-nut .inner-tm i {
+    margin-right: 5px;
+}
+
+.header-top .modal.right .inner-tt {
     background: var(--color-bg2);
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
+    font-size: 15px;
     text-align: center;
-    margin: auto;
     color: #fff;
     display: inline-block;
-
 }
 
 /* End Modal shopping */
@@ -867,7 +886,7 @@
 
 .Account .inner-desc {
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
     border-bottom: 1px solid #dae2e6;
     margin-bottom: 10px;
 }
@@ -1082,4 +1101,229 @@
 
 /* End ThongTin */
 
+/* PhuongThuc */
+
+.PhuongThuc .inner-main {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.PhuongThuc .card {
+    border: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.PhuongThuc .card-header {
+    background: #fff;
+    border: 0;
+    padding: 0;
+}
+
+.PhuongThuc .btn {
+    color: orange;
+    border: 1px solid orange;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    filter: inherit;
+}
+
+.PhuongThuc .btn.grayscale {
+    filter: grayscale(1);
+}
+
+
+.PhuongThuc .inner-icon img {
+    height: 21px;
+    margin-right: 15px;
+}
+
+.PhuongThuc .btn.collapsed {
+    margin-bottom: 10px;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.PhuongThuc .card-body {
+    font-size: 15px;
+    padding: 0;
+}
+
+.PhuongThuc .inner-tk {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.PhuongThuc .inner-nhleft {
+    padding: 12px;
+    font-size: 15px;
+}
+
+.PhuongThuc .inner-nhright {
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.PhuongThuc .col-xl-6 {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* End PhuongThuc */
+
 /* End ThanhToan */
+
+/* products */
+
+.products {
+    padding: 70px 0;
+}
+
+.products .inner-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.products .inner-desc {
+    font-size: 16px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #dae2e6;
+}
+
+.products form {
+    padding: 20px;
+    border: 1px solid #dae2e6;
+}
+
+.products .inner-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 14px;
+}
+
+.products .inner-menu {
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.products .inner-menu .inner-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.products .inner-menu .inner-item .inner-info {
+    display: flex;
+}
+
+.products .inner-menu .inner-item:nth-child(3) {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.products .inner-menu .inner-item .inner-ten {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.products .inner-menu .inner-item .inner-gia {
+    color: var(--color-bg2);
+    font-weight: 700;
+}
+
+.products .inner-menu .inner-item .inner-info .inner-nut {
+    color: #fff;
+    padding: 5px 18px;
+    font-size: 14px;
+    background: #27ae60;
+    border-radius: 45px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.products .inner-menu .inner-item .inner-info .inner-nut i {
+    margin-right: 5px;
+}
+
+.products .inner-menu .inner-item .inner-info .inner-chitiet {
+    color: var(--color-text);
+    padding: 5px 18px;
+    font-size: 14px;
+    background: #e5e5e5;
+    border-radius: 45px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.products .inner-menu .inner-item .inner-info .inner-chitiet i {
+    margin-right: 5px;
+}
+
+.products .inner-menu .inner-item .inner-total .inner-tong {
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.products .inner-menu .inner-item .inner-total .inner-tien {
+    color: var(--color-bg2);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Detail */
+
+.products .modal-content {
+    border: none;
+}
+
+.products .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.products .modal-header .inner-title {
+    text-transform: uppercase;
+}
+
+.products .modal-header .close {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    opacity: 1;
+}
+
+.products .modal-body .inner-pt {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.products .modal-body .inner-pt .inner-cachthuc i {
+    color: var(--color-bg2);
+    margin-right: 5px;
+}
+
+/* End Detail */
+
+/* End products */
