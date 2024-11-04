@@ -20,7 +20,6 @@
   <title>Đặc sản 3 miền</title>
   <link href='./assets/img/logo.png' rel='icon' type='image/x-icon' />
 </head>
-</head>
 
 <body>
 
@@ -31,13 +30,13 @@
       <div class="inner-wrap">
 
         <div class="inner-left">
-          <a href="login.html"><img src="assets/img/logo.png" alt="logo"></a>
+          <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
         </div>
 
         <div class="inner-middle">
           <form action="" class="inner-find">
             <input type="text" placeholder="Tìm Kiếm món ăn...">
-            <a href="timkiem-login.html" class="inner-button-find">
+            <a href="timkiem.html" class="inner-button-find">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </form>
@@ -51,17 +50,15 @@
             </a>
             <a class="inner-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
-              <div class="inner-register">Tài khoản</div>
+              <div class="inner-register">Đăng nhập / Đăng ký</div>
               <div class="nav-link dropdown-toggle">
-                Thanh
+                Tài khoản
               </div>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="account.html"><i class="fa-regular fa-circle-user"></i>Tài khoản của
-                  tôi</a>
-                <a class="dropdown-item" href="products.html"><i class="fa-solid fa-cart-shopping"></i>Đơn hàng đã
-                  mua</a>
-                <a class="dropdown-item" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Thoát tài
-                  khoản</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal"><i
+                    class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal-2"><i
+                    class="fa-solid fa-user-plus"></i>Đăng kí</a>
               </div>
             </a>
           </div>
@@ -83,8 +80,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="inner-title">Đăng nhập tài khoản</h5>
-            <p class="inner-desc">Đăng nhập thành viên để mua hàng và nhận những ưu đãi đặc biệt từ chúng
-              tôi</p>
+            <p class="inner-desc">Đăng nhập thành viên để mua hàng và nhận những ưu đãi đặc biệt từ chúng tôi</p>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -122,8 +118,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="inner-title">Đăng ký tài khoản</h5>
-            <p class="inner-desc">Đăng ký thành viên để mua hàng và nhận những ưu đãi đặc biệt từ chúng tôi
-            </p>
+            <p class="inner-desc">Đăng ký thành viên để mua hàng và nhận những ưu đãi đặc biệt từ chúng tôi</p>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -238,28 +233,28 @@
       <div class="inner-menu">
         <ul>
           <li>
-            <a href="login.html">TRANG CHỦ</a>
+            <a href="index.html">TRANG CHỦ</a>
           </li>
           <li>
-            <a href="timkiemnangcao-login.html">MÓN CHAY</a>
+            <a href="timkiemnangcao.html">MÓN CHAY</a>
           </li>
           <li>
-            <a href="timkiemnangcao-login.html">MÓN MẶN</a>
+            <a href="timkiemnangcao.html">MÓN MẶN</a>
           </li>
           <li>
-            <a href="timkiemnangcao-login.html">MÓN LẨU</a>
+            <a href="timkiemnangcao.html">MÓN LẨU</a>
           </li>
           <li>
-            <a href="timkiemnangcao-login.html">MÓN ĂN VẶT</a>
+            <a href="timkiemnangcao.html">MÓN ĂN VẶT</a>
           </li>
           <li>
-            <a href="timkiemnangcao-login.html">MÓN TRÁNG MIỆNG</a>
+            <a href="timkiemnangcao.html">MÓN TRÁNG MIỆNG</a>
           </li>
           <li>
-            <a href="timkiemnangcao-login.html">NƯỚC UỐNG</a>
+            <a href="timkiemnangcao.html">NƯỚC UỐNG</a>
           </li>
           <li>
-            <a href="timkiemnangcao-login.html">MÓN KHÁC</a>
+            <a href="timkiemnangcao.html">MÓN KHÁC</a>
           </li>
         </ul>
       </div>
@@ -268,68 +263,337 @@
 
   <!-- End header bottom  -->
 
-  <!-- Account -->
+  <!-- Banner -->
 
-  <div class="Account">
+  <div class="Banner">
     <div class="container">
-      <form action="">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="inner-title">Thông tin tài khoản của bạn</div>
-            <div class="inner-desc">Quản lý thông tin để bảo mật tài khoản</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6">
-            <div class="form-group">
-              <label for="name1">Họ và tên</label>
-              <input type="text" id="name1" class="form-control" value="Cao Thái Phương Thanh">
-            </div>
-            <div class="form-group">
-              <label for="phone">Số điện thoại</label>
-              <input type="text" id="phone" class="form-control" value="0909098386" disabled>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text" id="email" class="form-control" value="thanh.ctp@sgu.edu.vn">
-            </div>
-            <div class="form-group">
-              <label for="diachi">Địa chỉ</label>
-              <input type="text" id="diachi" class="form-control"
-                value="273 An Dương Vương, Phường 3, Quận 5, TP Hồ Chí Minh">
-            </div>
-            <button class="button" onclick="capNhat()">
-              <i class="fa-regular fa-floppy-disk"></i>
-              Lưu thay đổi
-            </button>
-          </div>
-          <div class="col-xl-6">
-            <div class="form-group">
-              <label for="mk1">Mật khẩu hiện tại</label>
-              <input type="text" id="mk1" class="form-control" placeholder="Nhập mật khẩu hiện tại">
-            </div>
-            <div class="form-group">
-              <label for="mk3">Mật khẩu mới</label>
-              <input type="text" id="mk3" class="form-control" placeholder="Nhập mật khẩu mới">
-            </div>
-            <div class="form-group cach-duoi">
-              <label for="mk4">Xác nhận mật khẩu mới</label>
-              <input type="text" id="mk4" class="form-control" placeholder="Nhập lại mật khẩu mới">
-            </div>
-            <button class="button" onclick="thayDoi()">
-              <i class="fa-solid fa-key"></i>
-              Đổi mật khẩu
-            </button>
-          </div>
-
-        </div>
-      </form>
+      <div class="inner-img">
+        <img src="assets/img/banner.jpg" alt="banner">
+      </div>
     </div>
-
   </div>
 
-  <!-- End Account -->
+  <!-- End Banner -->
 
+  <!-- Service -->
+
+  <div class="Service">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="inner-info">
+              <div class="inner-chu1">GIAO HÀNG NHANH</div>
+              <div class="inner-chu2">Cho tất cả đơn hàng</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <div class="inner-info">
+              <div class="inner-chu1">SẢN PHẨM AN TOÀN</div>
+              <div class="inner-chu2">Cam kết chất lượng</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="inner-info">
+              <div class="inner-chu1">HỖ TRỢ 24/7</div>
+              <div class="inner-chu2">Tất cả ngày trong tuần</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-icon">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+            <div class="inner-info">
+              <div class="inner-chu1">HOÀN LẠI TIỀN</div>
+              <div class="inner-chu2">Nếu không hài lòng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Service -->
+
+  <!-- Products -->
+
+  <div class="Products">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="inner-title">
+            Kết quả tìm kiếm món ăn
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="inner-item">
+            <div class="inner-img" data-toggle="modal" data-target="#exampleModalCenter">
+              <a href="#"><img src="assets/img/products/nam-dui-ga-chay-toi.jpeg"></a>
+            </div>
+            <div class="inner-info">
+              <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
+              <div class="inner-gia">200.000 ₫</div>
+              <button type="button" class="inner-muahang" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal order -->
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="inner-hinh">
+              <img src="assets/img/products/nam-dui-ga-chay-toi.jpeg">
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="inner-name">Nấm đùi gà xào cháy tỏi</div>
+            <div class="inner-info">
+              <div class="inner-gia">200.000 ₫</div>
+              <div class="inner-sl">
+                <input class="inner-dau" type="button" value="-">
+                <span class="inner-so">1</span>
+                <input class="inner-dau" type="button" value="+">
+              </div>
+            </div>
+            <p class="inner-desc">Một Món chay ngon miệng với nấm đùi gà thái chân hương, xào săn với lửa và thật nhiều
+              tỏi băm, nêm nếm với mắm và nước tương chay, món ngon đưa cơm và rất dễ ăn cả cho người lớn và trẻ nhỏ.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <div class="inner-giaca">
+              <div class="inner-chu">Thành tiền</div>
+              <div class="inner-so">200.000 ₫</div>
+            </div>
+            <div class="inner-thanhtoan">
+              <button type="button" class="inner-nut1" onclick="thanhToan()">Thêm vào giỏ hàng <i
+                  class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Modal order -->
+  </div>
+
+  <!-- End Products -->
+
+
+  <!-- Pagination -->
+
+  <div class="Pagination">
+    <div class="container">
+      <ul>
+        <li>
+          <div class="inner-trang trang-chinh">
+            1
+          </div>
+        </li>
+        <li>
+          <div class="inner-trang">
+            2
+          </div>
+        </li>
+        <li>
+          <div class="inner-trang">
+            3
+          </div>
+        </li>
+        <li>
+          <div class="inner-trang">
+            4
+          </div>
+        </li>
+        <li>
+          <div class="inner-trang">
+            5
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End Pagination -->
 
   <!-- Footer-top -->
 
@@ -480,6 +744,7 @@
   </div>
 
   <!-- End Footer-bottom -->
+
 
 
 
