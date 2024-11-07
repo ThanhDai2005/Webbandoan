@@ -763,6 +763,7 @@
 
 .Pagination .inner-trang {
   background: #fff;
+  color: var(--color-text);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -803,9 +804,8 @@
 }
 
 .Footer-top .inner-logo img {
-  width: 150px;
-  height: 80px;
-  object-fit: cover;
+  width: 120px;
+  height: auto;
 }
 
 .Footer-top .inner-logo {

@@ -36,6 +36,11 @@ h5,
   background: #fff;
 }
 
+.wrapper .inner-img img {
+  width: 100px;
+  height: auto;
+}
+
 .wrapper .bg-wrap::after {
   display: none;
 }
