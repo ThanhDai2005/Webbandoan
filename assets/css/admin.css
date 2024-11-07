@@ -1,0 +1,181 @@
+.wrapper {
+  line-height: normal;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: var(--font);
+  line-height: normal;
+}
+
+#sidebar {
+  background: #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#sidebar .custom-menu .btn.btn-primary {
+  background: var(--color-bg2);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background: var(--color-bg2) !important;
+  border-color: var(--color-bg2) !important;
+}
+
+.wrapper .bg-wrap {
+  background: #fff;
+}
+
+.wrapper .bg-wrap::after {
+  display: none;
+}
+
+.wrapper .bg-wrap .user-logo h3 {
+  color: var(--color-text);
+}
+
+#sidebar ul li.active>a {
+  color: #909090;
+  background: #F9F9F9;
+}
+
+#sidebar ul li a {
+  color: #909090;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+#sidebar ul li a i {
+  font-size: 23px;
+  margin-right: 16px;
+}
+
+#sidebar ul li.active>a:hover {
+  background: #F9F9F9;
+  border: none;
+}
+
+#sidebar ul li a:hover {
+  color: var(--color-bg2);
+  background: #F9F9F9;
+  border: none;
+}
+
+#content {
+  padding: 35px;
+}
+
+.inner-gth .inner-right {
+  display: flex;
+  align-items: center;
+}
+
+.inner-gth .inner-right .inner-info {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.inner-gth .inner-right .inner-user {
+  background: #ddd;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.inner-gth .inner-right .inner-thongbao {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.inner-gth .inner-right .inner-admin {
+  font-size: 16px;
+}
+
+.giaodien .inner-item {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  height: 500px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.giaodien .inner-item .inner-box {
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+  height: 460px;
+}
+
+.giaodien .inner-item .inner-box:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(45deg, var(--red), orange);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.giaodien .inner-item .inner-box .inner-so {
+  position: absolute;
+  font-size: 32px;
+  right: 30px;
+  top: 5px;
+  font-weight: 700;
+}
+
+.giaodien .inner-item .inner-box .inner-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.giaodien .inner-item .inner-box .inner-img img {
+  width: 200px;
+  height: auto;
+}
+
+.giaodien .inner-item .inner-box .inner-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.giaodien .inner-item .inner-box .inner-desc {
+  margin: 0;
+  font-size: 15px;
+}
+
+.giaodien .inner-item .inner-box .inner-desc {
+  margin: 0;
+  font-size: 15px;
+}
+
+.giaodien .inner-item .inner-box .inner-desc {
+  margin: 0;
+  font-size: 15px;
+}
