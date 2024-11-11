@@ -39,6 +39,10 @@ function tinhTien() {
   alert("Thanh toán thành công !");
 }
 
+function notLogin() {
+  alert("Chưa đăng nhập tài khoản !");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // Lấy tất cả các nút accordion
   const accordionButtons = document.querySelectorAll('.PhuongThuc .btn');
