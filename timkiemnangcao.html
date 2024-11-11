@@ -10,10 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="assets/font-awesome-pro-v6-6.2.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -65,7 +62,7 @@
           <div class="inner-shopping" data-toggle="modal" data-target="#cartModal">
             <div class="inner-icon">
               <i class="fa-solid fa-basket-shopping"></i>
-              <span class="inner-so">2</span>
+              <span class="inner-so">0</span>
             </div>
             <span class="inner-text-shopping">Giỏ hàng</span>
           </div>
@@ -140,6 +137,12 @@
                 </div>
                 <div class="col-12">
                   <div class="form-group">
+                    <label for="dc">Địa chỉ</label>
+                    <input type="text" id="dc" class="form-control" placeholder="Nhập địa chỉ">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
                     <label for="mk2">Mật khẩu</label>
                     <input type="password" id="mk2" class="form-control" placeholder="Nhập mật khẩu">
                   </div>
@@ -179,44 +182,20 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="cart-item ">
-              <div class="inner-product">
-                <img src="assets/img/products/nam-dui-ga-chay-toi.jpeg" alt="Product 1">
-                <div class="inner-gia">100.000 ₫</div>
-              </div>
-              <div class="inner-info">
-                <div class="inner-ten">Nấm đùi gà xào cháy tỏi</div>
-                <div class="inner-sl">
-                  <input class="inner-dau" type="button" value="-">
-                  <span class="inner-so">1</span>
-                  <input class="inner-dau" type="button" value="+">
-                </div>
-              </div>
+            <div class="inner-icon">
+              <i class="fa-solid fa-cart-xmark"></i>
             </div>
-            <div class="cart-item ">
-              <div class="inner-product">
-                <img src="assets/img/products/nam-dui-ga-chay-toi.jpeg" alt="Product 2">
-                <div class="inner-gia">200.000 ₫</div>
-              </div>
-              <div class="inner-info">
-                <div class="inner-ten">Súp bào ngư hải sâm</div>
-                <div class="inner-sl">
-                  <input class="inner-dau" type="button" value="-">
-                  <span class="inner-so">1</span>
-                  <input class="inner-dau" type="button" value="+">
-                </div>
-              </div>
-            </div>
+            <div class="inner-desc">Không có sản phẩm nào trong giỏ hàng của bạn</div>
           </div>
           <div class="modal-footer">
             <div class="inner-tong">
               <div class="inner-text-tong">Tổng tiền:</div>
-              <div class="inner-gia-tong">300.000 ₫</div>
+              <div class="inner-gia-tong">0 ₫</div>
             </div>
             <div class="inner-nut">
               <button type="button" class="inner-tm" data-dismiss="modal" aria-label="Close"><i
                   class="fa-solid fa-plus"></i>Thêm món</button>
-              <a href="thanhtoan.html" class="inner-tt">Thanh toán</a>
+              <button class="inner-tt inner-tt-nologin">Thanh toán</button>
             </div>
           </div>
         </div>
@@ -561,7 +540,7 @@
               <div class="inner-so">200.000 ₫</div>
             </div>
             <div class="inner-thanhtoan">
-              <button type="button" class="inner-nut1" onclick="thanhToan()">Thêm vào giỏ hàng <i
+              <button type="button" class="inner-nut1" onclick="notLogin()">Thêm vào giỏ hàng <i
                   class="fa-solid fa-basket-shopping"></i></button>
             </div>
           </div>
