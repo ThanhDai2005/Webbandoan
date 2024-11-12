@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- <title>Sidebar 09</title> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/font-awesome-pro-v6-6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="admin/css/style.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+
+  <title>Admin</title>
+  <link href='/Webbandoan/assets/img/logo.png' rel='icon' type='image/x-icon' />
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+        </button>
+      </div>
+      <div class="img bg-wrap text-center py-4">
+        <div class="user-logo">
+          <div class="inner-img">
+            <img src="assets/img/logo.png" alt="logo">
+          </div>
+          <h3>Đặc sản 3 miền</h3>
+        </div>
+      </div>
+      <ul class="list-unstyled components mb-5">
+        <li class="active">
+          <a href="admin.html"><i class="fa-solid fa-house"></i> Trang tổng quan</a>
+        </li>
+        <li>
+          <a href="adminproduct.html"><i class="fa-solid fa-bowl-food"></i> Sản phẩm</a>
+        </li>
+        <li>
+          <a href="admincustomer.html"><i class="fa-solid fa-users"></i> Khách hàng</a>
+        </li>
+        <li>
+          <a href="adminproduct.html"><i class="fa-solid fa-basket-shopping"></i> Đơn hàng</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-chart-simple"></i> Thống kê</a>
+        </li>
+      </ul>
+      </nav>
+      <div id="content">
+        <div class="section product-all active">
+            <div class="admin-control">
+                <div class="admin-control-left">
+                    <select name="the-loai" id="the-loai" onchange="showProduct()">
+                        <option>Tất cả</option>
+                        <option>Món chay</option>
+                        <option>Món mặn</option>
+                        <option>Món lẩu</option>
+                        <option>Món ăn vặt</option>
+                        <option>Món tráng miệng</option>
+                        <option>Nước uống</option>
+                        <option>Đã xóa</option>
+                    </select>
+                </div>
+                <div class="admin-control-center">
+                    <form action="" class="form-search">
+                        <span class="search-btn"><i class="fa-light fa-magnifying-glass"></i></span>
+                            <input id="form-search-product" type="text" class="form-search-input" placeholder="Tìm kiếm tên món...">
+                    </form>
+                </div>
+                <div class="admin-control-right">
+                    <a href="adminproduct.html"><button class="btn-control-large" id="btn-cancel-product"><i class="fa-light fa-rotate-right"></i> Làm mới</button></a>
+                    <button class="btn-control-large" id="btn-add-product"><i class="fa-light fa-plus"></i> Thêm món mới</button>                  
+                </div>
+            </div>
+            <div id="show-product"><div class="no-result"><div class="no-result-i"><i class="fa-light fa-face-sad-cry"></i></div><div class="no-result-h">Không có sản phẩm để hiển thị</div></div></div>
+            </div>
+        </div>
+      </div>
+    </nav>
+</body>
+</html>
