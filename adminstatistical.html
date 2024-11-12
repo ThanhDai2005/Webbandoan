@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- <title>Sidebar 09</title> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/font-awesome-pro-v6-6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="admin/css/style.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+
+  <title>Admin</title>
+  <link href='/Webbandoan/assets/img/logo.png' rel='icon' type='image/x-icon' />
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+        </button>
+      </div>
+      <div class="img bg-wrap text-center py-4">
+        <div class="user-logo">
+          <div class="inner-img">
+            <img src="assets/img/logo.png" alt="logo">
+          </div>
+          <h3>Đặc sản 3 miền</h3>
+        </div>
+      </div>
+      <ul class="list-unstyled components mb-5">
+        <li class="active">
+          <a href="admin.html"><i class="fa-solid fa-house"></i> Trang tổng quan</a>
+        </li>
+        <li>
+          <a href="adminproduct.html"><i class="fa-solid fa-bowl-food"></i> Sản phẩm</a>
+        </li>
+        <li>
+          <a href="admincustomer.html"><i class="fa-solid fa-users"></i> Khách hàng</a>
+        </li>
+        <li>
+          <a href="adminorder.html"><i class="fa-solid fa-basket-shopping"></i> Đơn hàng</a>
+        </li>
+        <li>
+          <a href="adminstatistical.html"><i class="fa-solid fa-chart-simple"></i> Thống kê</a>
+        </li>
+      </ul>
+
+    </nav>
+    <div class="container">
+        <main class="content">
+        <div class="section active">
+            <div class="admin-control">
+                <div class="admin-control-left">
+                    <select name="the-loai-tk" id="the-loai-tk" onchange="thongKe()">
+                        <option>Tất cả</option>
+                        <option>Món chay</option>
+                        <option>Món mặn</option>
+                        <option>Món lẩu</option>
+                        <option>Món ăn vặt</option>
+                        <option>Món tráng miệng</option>
+                        <option>Nước uống</option>
+                        <option>Món khác</option>
+                    </select>
+                </div>
+                <div class="admin-control-center">
+                    <form action="" class="form-search">
+                        <span class="search-btn"><i class="fa-light fa-magnifying-glass"></i></span>
+                        <input id="form-search-tk" type="text" class="form-search-input" placeholder="Tìm kiếm tên món..." oninput="thongKe()">
+                    </form>
+                </div>
+                <div class="admin-control-right">
+                    <form action="" class="fillter-date">
+                        <div>
+                            <label for="time-start">Từ</label>
+                            <input type="date" class="form-control-date" id="time-start-tk" onchange="thongKe()">
+                        </div>
+                        <div>
+                            <label for="time-end">Đến</label>
+                            <input type="date" class="form-control-date" id="time-end-tk" onchange="thongKe()">
+                        </div>
+                    </form> 
+                    <button class="btn-reset-order" onclick="thongKe(1)"><i class="fa-regular fa-arrow-up-short-wide"></i></i></button>
+                    <button class="btn-reset-order" onclick="thongKe(2)"><i class="fa-regular fa-arrow-down-wide-short"></i></button>
+                    <a href="adminstatistical.html"><button class="btn-reset-order" onclick="thongKe(0)"><i class="fa-light fa-arrow-rotate-right"></i></button></a>                    
+                </div>
+            </div>
+            <div class="order-statistical" id="order-statistical">
+                <div class="order-statistical-item">
+                    <div class="order-statistical-item-content">
+                        <p class="order-statistical-item-content-desc">Sản phẩm được bán ra</p>
+                        <h4 class="order-statistical-item-content-h" id="quantity-product">200</h4>
+                    </div>
+                    <div class="order-statistical-item-icon">
+                        <i class="fa-light fa-salad"></i>
+                    </div>
+                </div>
+                <div class="order-statistical-item">
+                    <div class="order-statistical-item-content">
+                        <p class="order-statistical-item-content-desc">Số lượng bán ra</p>
+                        <h4 class="order-statistical-item-content-h" id="quantity-order">600</h4>
+                    </div>
+                    <div class="order-statistical-item-icon">
+                        <i class="fa-light fa-file-lines"></i>
+                    </div>
+                </div>
+                <div class="order-statistical-item">
+                    <div class="order-statistical-item-content">
+                        <p class="order-statistical-item-content-desc">Doanh thu</p>
+                        <h4 class="order-statistical-item-content-h" id="quantity-sale">1.000.000&nbsp;₫</h4>
+                    </div>
+                    <div class="order-statistical-item-icon">
+                        <i class="fa-light fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>STT</td>
+                            <td>Tên món</td>
+                            <td>Số lượng bán</td>
+                            <td>Doanh thu</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="showTk">
+                        <tr>
+                            <td>1</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/nam-dui-ga-chay-toi.jpeg" alt=""><p>Bún riêu chay (1 suất)</p></div></td>
+                            <td>1</td>
+                            <td>75.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="46"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/nam-dui-ga-chay-toi.jpeg" alt=""><p>Súp bào ngư hải sâm (1 phần)</p></div></td>
+                            <td>1</td>
+                            <td>540.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="6"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/nam-dui-ga-chay-toi.jpeg" alt=""><p>Bún riêu chay (1 suất)</p></div></td>
+                            <td>1</td>
+                            <td>75.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="46"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/nam-dui-ga-chay-toi.jpeg" alt=""><p>Súp bào ngư hải sâm (1 phần)</p></div></td>
+                            <td>1</td>
+                            <td>540.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="6"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/rau-xao-ngu-sac.png" alt=""><p>Bún riêu chay (1 suất)</p></div></td>
+                            <td>1</td>
+                            <td>75.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="46"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/rau-xao-ngu-sac.png" alt=""><p>Súp bào ngư hải sâm (1 phần)</p></div></td>
+                            <td>1</td>
+                            <td>540.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="6"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/rau-xao-ngu-sac.png" alt=""><p>Bún riêu chay (1 suất)</p></div></td>
+                            <td>1</td>
+                            <td>75.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="46"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><div class="prod-img-title"><img class="prd-img-tbl" src="./assets/img/products/rau-xao-ngu-sac.png" alt=""><p>Súp bào ngư hải sâm (1 phần)</p></div></td>
+                            <td>1</td>
+                            <td>540.000&nbsp;₫</td>
+                            <td><button class="btn-detail product-order-detail" data-id="6"><i class="fa-regular fa-eye"></i> Chi tiết</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+      <script src="/Webbandoan/admin/js/jquery.min.js"></script>
+      <script src="/Webbandoan/admin/js/bootstrap.min.js"></script>
+      <script src="/Webbandoan/admin/js/main.js"></script>
+      <script src="/Webbandoan/admin/js/popper.js"></script>
+</body>
+
+</html>
