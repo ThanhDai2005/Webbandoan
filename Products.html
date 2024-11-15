@@ -73,6 +73,7 @@
     </div>
 
     <!-- Modal login -->
+
     <div class="modal fade modal-form" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -112,58 +113,10 @@
       </div>
     </div>
 
-    <div class="modal fade modal-form" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="inner-title">Đăng ký tài khoản</h5>
-            <p class="inner-desc">Đăng ký thành viên để mua hàng và nhận những ưu đãi đặc biệt từ chúng tôi
-            </p>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="name">Tên đầy đủ</label>
-                    <input type="text" id="name" class="form-control" placeholder="VD: Thành Đại">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="sdt2">Số điện thoại</label>
-                    <input type="text" id="sdt2" class="form-control" placeholder="Nhập số điện thoại">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="mk2">Mật khẩu</label>
-                    <input type="password" id="mk2" class="form-control" placeholder="Nhập mật khẩu">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="nhapmk">Nhập lại Mật khẩu</label>
-                    <input type="password" id="nhapmk" class="form-control" placeholder="Nhập lại mật khẩu">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="button" onclick="dangKi()">
-                    Đăng kí
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- End Modal login -->
 
     <!-- Modal shopping -->
+
     <div class="modal fade right" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -223,6 +176,9 @@
         </div>
       </div>
     </div>
+
+    <!-- End Modal shopping -->
+
   </header>
 
   <!-- End header top  -->
@@ -276,98 +232,30 @@
           </div>
         </div>
         <div class="inner-menu">
-          <div class="inner-item">
-            <div class="inner-info">
-              <div class="inner-img">
-                <img src="assets/img/products/nam-dui-ga-chay-toi.jpeg">
-              </div>
-              <div class="inner-chu">
-                <div class="inner-ten">Trà đào chanh sả!</div>
-                <div class="inner-sl">x1</div>
-              </div>
-            </div>
-            <div class="inner-gia">
-              100.000 ₫
-            </div>
-          </div>
-          <div class="inner-item">
-            <div class="inner-info">
-              <div class="inner-img">
-                <img src="assets/img/products/nam-dui-ga-chay-toi.jpeg" width="80px" height="80px">
-              </div>
-              <div class="inner-chu">
-                <div class="inner-ten">Trà đào chanh sả!</div>
-                <div class="inner-sl">x1</div>
-              </div>
-            </div>
-            <div class="inner-gia">
-              200.000 ₫
-            </div>
-          </div>
-          <div class="inner-item">
-            <div class="inner-info">
-              <div class="inner-nut"><i class="fa-solid fa-check"></i> Đã xử lý</div>
-              <button type="button" class="inner-chitiet" data-toggle="modal" data-target="#exampleModalCenter">
-                <i class="fa-regular fa-eye"></i> Xem chi tiết
-              </button>
-            </div>
-            <div class="inner-total">
-              <span class="inner-tong">Tổng tiền:</span>
-              <span class="inner-tien">300.000 ₫</span>
-            </div>
-          </div>
+          <table>
+            <tr>
+              <th>Đơn hàng</th>
+              <th>Ngày</th>
+              <th>Địa chỉ</th>
+              <th>Giá trị đơn hàng</th>
+              <th>TT thanh toán</th>
+              <th>TT vận chuyển</th>
+            </tr>
+            <tr>
+              <td><a class="active" href="chitiet.html">#2207</a></td>
+              <td>20/11/2024</td>
+              <td>273 An Dương Vương, Phường 3, Quận 5, TP Hồ Chí Minh</td>
+              <td>330.000 ₫</td>
+              <td>Đã thu tiền</td>
+              <td>Đã chuyển</td>
+            </tr>
+          </table>
         </div>
       </form>
     </div>
-
-    <!-- Detail -->
-
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="inner-title">Thông tin đơn hàng</div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="inner-pt">
-              <div class="inner-cachthuc"><i class="fa-regular fa-calendar-days"></i>Ngày đặt hàng</div>
-              <div class="inner-ketqua">20/11/2024</div>
-            </div>
-            <div class="inner-pt">
-              <div class="inner-cachthuc"><i class="fa-solid fa-truck"></i>Hình thức giao</div>
-              <div class="inner-ketqua">Giao tận nơi</div>
-            </div>
-            <div class="inner-pt">
-              <div class="inner-cachthuc"><i class="fa-regular fa-credit-card"></i>Phương thức thanh toán</div>
-              <div class="inner-ketqua">Thanh toán tiền mặt</div>
-            </div>
-            <div class="inner-pt">
-              <div class="inner-cachthuc"><i class="fa-solid fa-location-dot"></i>Địa điểm nhận</div>
-              <div class="inner-ketqua">Đại Học Sài Gòn</div>
-            </div>
-            <div class="inner-pt">
-              <div class="inner-cachthuc"><i class="fa-solid fa-person"></i>Người nhận</div>
-              <div class="inner-ketqua">Cao Thái Phương Thanh</div>
-            </div>
-            <div class="inner-pt">
-              <div class="inner-cachthuc"><i class="fa-solid fa-phone"></i>Số điện thoại nhận</div>
-              <div class="inner-ketqua">0909098386</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- End Detail -->
-
   </div>
 
   <!-- End products -->
-
 
   <!-- Footer-top -->
 
@@ -398,7 +286,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- End Footer-top -->
 

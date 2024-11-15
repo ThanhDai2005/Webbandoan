@@ -1,4 +1,5 @@
 /* Header-top */
+
 .header-top {
   background: #fff;
   box-shadow: inset 0px -0.5px 0px #e6e6e6;
@@ -141,7 +142,7 @@
   }
 }
 
-/* Modal login */
+/* Modal login and Modal register */
 
 .header-top .modal-form .modal-header {
   flex-direction: column;
@@ -192,7 +193,7 @@
   text-align: center;
 }
 
-/* End Modal login */
+/* End Modal login and Modal register */
 
 .header-top .inner-right .inner-shopping {
   display: flex;
@@ -429,7 +430,6 @@
   /* Hiển thị header */
 }
 
-
 .header-bottom .inner-menu {
   padding: 0 10px;
 }
@@ -484,7 +484,6 @@
     padding: 10px 4px;
   }
 }
-
 
 /* End Header-bottom */
 
@@ -555,7 +554,6 @@
     margin-bottom: 10px;
   }
 }
-
 
 /* End Service */
 
@@ -766,9 +764,7 @@
   cursor: pointer;
 }
 
-
 /* End Modal order */
-
 
 /* End Products */
 
@@ -1062,9 +1058,7 @@
   font-size: 15px;
 }
 
-
 /* End Footer-bottom */
-
 
 /* Account */
 
@@ -1133,6 +1127,8 @@
     margin-bottom: 10px;
   }
 }
+
+/* End Account */
 
 /* ThongTin */
 
@@ -1308,7 +1304,6 @@
   filter: grayscale(1);
 }
 
-
 .PhuongThuc .inner-icon img {
   height: 21px;
   margin-right: 15px;
@@ -1348,8 +1343,6 @@
 
 /* End PhuongThuc */
 
-/* End ThanhToan */
-
 /* products */
 
 .products {
@@ -1373,7 +1366,115 @@
   border: 1px solid #dae2e6;
 }
 
-.products .inner-img img {
+.products .inner-menu {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.products table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px 8px;
+}
+
+.products th {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 5px;
+  border-bottom: 1px solid #000;
+}
+
+.products td {
+  font-size: 15px;
+}
+
+.products td .active {
+  color: var(--color-bg2);
+}
+
+/* End products */
+
+/* ChiTiet */
+
+.chitiet {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.chitiet .inner-chitiet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chitiet .inner-chitiet .inner-tt {
+  font-size: 19px;
+  margin-bottom: 27px;
+}
+
+.chitiet .inner-chitiet .inner-vc {
+  font-size: 15px;
+}
+
+.chitiet .inner-trangthai {
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.chitiet .inner-trangthai .inner-ct {
+  margin-right: 35px;
+}
+
+.chitiet .inner-trangthai .inner-ct i {
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.chitiet .inner-trangthai .inner-ngay i {
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.chitiet .inner-diachi .inner-ten {
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+.chitiet .inner-diachi .inner-gth {
+  min-height: 110px;
+  padding: 13px 25px 10px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.chitiet .inner-diachi .inner-gth .inner-ten {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.chitiet .inner-diachi .inner-gth .inner-dc {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.chitiet .inner-diachi .inner-gth .inner-sdt {
+  font-size: 15px;
+}
+
+.chitiet .inner-diachi .inner-gth .inner-tt {
+  font-size: 15px;
+}
+
+.chitiet .inner-diachi .inner-gth .inner-ghichu {
+  font-size: 15px;
+}
+
+.chitiet .inner-img img {
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -1381,126 +1482,132 @@
   margin-right: 14px;
 }
 
-.products .inner-menu {
+.chitiet .inner-menu {
   padding: 15px;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
   margin-top: 20px;
 }
 
-.products .inner-menu .inner-item {
+.chitiet .inner-menu .inner-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
-.products .inner-menu .inner-item .inner-info {
+.chitiet .inner-menu .inner-item .inner-info {
   display: flex;
 }
 
-.products .inner-menu .inner-item:nth-child(3) {
+.chitiet .inner-menu .inner-tonggia {
   border-top: 1px solid #f0f0f0;
   padding-top: 20px;
   margin-bottom: 0;
 }
 
-.products .inner-menu .inner-item .inner-ten {
+.chitiet .inner-menu .inner-item .inner-ten {
   font-size: 16px;
   font-weight: 500;
 }
 
-.products .inner-menu .inner-item .inner-gia {
+.chitiet .inner-menu .inner-item .inner-gia {
   color: var(--color-bg2);
   font-weight: 700;
 }
 
-.products .inner-menu .inner-item .inner-info .inner-nut {
-  color: #fff;
-  padding: 5px 18px;
+.chitiet .inner-menu .inner-tonggia .inner-tien {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chitiet .inner-menu .inner-tonggia .inner-tien .inner-th {
+  font-size: 16px;
+}
+
+.chitiet .inner-menu .inner-tonggia .inner-tien .inner-th span {
   font-size: 14px;
-  background: #27ae60;
-  border-radius: 45px;
-  text-transform: uppercase;
-  margin-right: 5px;
+  color: var(--color-bg2);
 }
 
-.products .inner-menu .inner-item .inner-info .inner-nut i {
-  margin-right: 5px;
+.chitiet .inner-menu .inner-tonggia .inner-tien .inner-st {
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.products .inner-menu .inner-item .inner-info .inner-chitiet {
-  color: var(--color-text);
-  padding: 5px 18px;
-  font-size: 14px;
-  background: #e5e5e5;
-  border-radius: 45px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  outline: none;
+.chitiet .inner-menu .inner-tonggia .inner-vanchuyen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.products .inner-menu .inner-item .inner-info .inner-chitiet i {
-  margin-right: 5px;
+.chitiet .inner-menu .inner-tonggia .inner-vanchuyen .inner-vc1 {
+  font-size: 16px;
 }
 
-.products .inner-menu .inner-item .inner-total .inner-tong {
-  font-size: 15px;
-  margin-right: 15px;
+.chitiet .inner-menu .inner-tonggia .inner-vanchuyen .inner-vc2 {
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.products .inner-menu .inner-item .inner-total .inner-tien {
+.chitiet .inner-menu .inner-tonggia .inner-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chitiet .inner-menu .inner-tonggia .inner-total .inner-tong1 {
+  font-size: 16px;
+}
+
+.chitiet .inner-menu .inner-tonggia .inner-total .inner-tong2 {
   color: var(--color-bg2);
   font-size: 22px;
   font-weight: 700;
 }
 
-/* Detail */
-
-.products .modal-content {
-  border: none;
+@media (max-width: 991.98px) {
+  .chitiet .inner-diachi .inner-gth {
+    min-height: 132px;
+  }
 }
 
-.products .modal-header {
-  border-bottom: none;
-  position: relative;
+@media (max-width: 767.98px) {
+  .chitiet .inner-diachi {
+    margin-bottom: 25px;
+  }
+
+  .chitiet .inner-chitiet .inner-vc {
+    margin-bottom: 20px;
+  }
+
+  .chitiet .inner-chitiet {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .chitiet .inner-trangthai {
+    display: block;
+  }
+
+  .chitiet .inner-diachi .inner-gth {
+    min-height: 0;
+  }
+
+  .chitiet .inner-menu {
+    margin-top: 0;
+  }
 }
 
-.products .modal-header .inner-title {
-  text-transform: uppercase;
+@media (max-width: 500px) {
+  .chitiet {
+    padding-top: 100px;
+  }
 }
 
-.products .modal-header .close {
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  outline: none;
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  opacity: 1;
-}
-
-.products .modal-body .inner-pt {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.products .modal-body .inner-pt .inner-cachthuc i {
-  color: var(--color-bg2);
-  margin-right: 5px;
-}
-
-/* End Detail */
-
-/* End products */
+/* End ChiTiet */
 
 /* Products mon-man */
 
@@ -1510,22 +1617,29 @@
 }
 
 .Products.mon-man .inner-menu {
-  background: #F5F5F5;
   padding: 12px;
+  border-right: 1px solid #eee;
 }
 
 .Products.mon-man .inner-menu .inner-name {
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 12px;
-  border-bottom: 1px solid #52575C;
+}
 
+.Products.mon-man .inner-menu .inner-vung {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
 }
 
 .Products.mon-man .inner-menu .inner-mucgia {
   font-size: 16px;
   margin-bottom: 10px;
   margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
 }
 
 .Products.mon-man .inner-menu ul {
@@ -1564,37 +1678,112 @@
   margin-bottom: 15px;
 }
 
-.Products.mon-man .inner-include {
+.Products.mon-man .inner-timkiem input {
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #fff;
+  border: 1px solid rgba(34, 34, 34, .2);
+  padding: 10px 20px;
+  border-radius: 45px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.Products.mon-man .inner-timkiem .inner-tk {
+  background: var(--color-bg2);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  right: 15px;
+  top: 0;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.Products.mon-man .inner-include .inner-uutien {
-  font-size: 14px;
-  margin-right: 24px;
+.Products.mon-man .inner-loc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dee2e6;
 }
 
-.Products.mon-man .inner-list a {
-  font-size: 14px;
-  color: var(--color-text);
-  background: #ededed;
-  padding: 2px 10px;
-  margin: 2px 8px;
+.Products.mon-man .inner-loc ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Products.mon-man .inner-loc ul li a {
+  color: #898989;
+  padding: 10px 15px;
   display: inline-block;
-  border-radius: 4px;
-  transition: all 0.25s ease;
+  position: relative;
 }
 
-.Products.mon-man .inner-list a:hover {
+.Products.mon-man .inner-loc ul li a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0px;
   background: var(--color-bg2);
-  color: #fff;
+  position: absolute;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.Products.mon-man .inner-loc ul li a:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.Products.mon-man .inner-loc ul .nut {
+  display: none;
 }
 
 @media (max-width: 767.98px) {
   .Products.mon-man {
     padding-top: 80px;
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .Products.mon-man .inner-loc ul .nut {
+    display: block;
+  }
+
+  .Products.mon-man .inner-loc ul .nut {
+    border: 1px solid #eee;
+    background: #fff;
+    border-radius: 5px;
+    outline: 0;
+    width: 125px;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
+  .Products.mon-man .inner-loc {
+    padding: 10px 0;
+  }
+
+  .Products.mon-man .inner-loc .inner-sapxep {
+    margin-right: 10px;
+  }
+
+  .Products.mon-man .inner-loc ul li {
+    display: none;
   }
 }
 

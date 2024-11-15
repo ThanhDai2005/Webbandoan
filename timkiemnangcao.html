@@ -71,6 +71,7 @@
     </div>
 
     <!-- Modal login -->
+
     <div class="modal fade modal-form" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -109,63 +110,10 @@
       </div>
     </div>
 
-    <div class="modal fade modal-form" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="inner-title">Đăng ký tài khoản</h5>
-            <p class="inner-desc">Đăng ký thành viên để mua hàng và nhận những ưu đãi đặc biệt từ chúng tôi</p>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="name">Tên đầy đủ</label>
-                    <input type="text" id="name" class="form-control" placeholder="VD: Thành Đại">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="sdt2">Số điện thoại</label>
-                    <input type="text" id="sdt2" class="form-control" placeholder="Nhập số điện thoại">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="dc">Địa chỉ</label>
-                    <input type="text" id="dc" class="form-control" placeholder="Nhập địa chỉ">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="mk2">Mật khẩu</label>
-                    <input type="password" id="mk2" class="form-control" placeholder="Nhập mật khẩu">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="nhapmk">Nhập lại Mật khẩu</label>
-                    <input type="password" id="nhapmk" class="form-control" placeholder="Nhập lại mật khẩu">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="button" onclick="dangKi()">
-                    Đăng kí
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- End Modal login -->
 
     <!-- Modal shopping -->
+
     <div class="modal fade right" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -201,6 +149,9 @@
         </div>
       </div>
     </div>
+
+    <!-- End Modal shopping -->
+
   </header>
 
   <!-- End header top  -->
@@ -242,7 +193,6 @@
 
   <!-- End header bottom  -->
 
-
   <!-- Products mon-man -->
 
   <div class="Products mon-man">
@@ -251,6 +201,23 @@
         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
           <div class="inner-menu">
             <div class="inner-name">Bộ lọc</div>
+            <div class="inner-vung">Vùng</div>
+            <form action="">
+              <ul>
+                <li>
+                  <input id="mb-1" type="checkbox">
+                  <label for="mb-1">Miền bắc</label>
+                </li>
+                <li>
+                  <input id="mb-2" type="checkbox">
+                  <label for="mb-2">Miền trung</label>
+                </li>
+                <li>
+                  <input id="mb-3" type="checkbox">
+                  <label for="mb-3">Miền Nam</label>
+                </li>
+              </ul>
+            </form>
             <div class="inner-mucgia">Mức giá</div>
             <form action="">
               <ul>
@@ -282,15 +249,27 @@
               </div>
             </div>
             <div class="col-xl-12">
-              <div class="inner-include">
-                <div class="inner-uutien">
-                  Ưu tiên xem:
-                </div>
-                <div class="inner-list">
-                  <a href="#">Theo tên</a>
-                  <a href="#">Giảm dần</a>
-                  <a href="#">Tăng dần</a>
-                </div>
+              <div class="inner-timkiem">
+                <input type="text" placeholder="Tìm kiếm món ăn trong bộ lọc này">
+                <a href="timkiemnangcao.html" class="inner-tk"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+            </div>
+            <div class="col-xl-12">
+              <div class="inner-loc">
+                <span class="inner-sapxep">Sắp xếp:</span>
+                <ul>
+                  <li><a href="timkiemnangcao.html">Tên A → Z</a></li>
+                  <li><a href="timkiemnangcao.html">Tên Z → A</a></li>
+                  <li><a href="timkiemnangcao.html">Giá tăng dần</a></li>
+                  <li><a href="timkiemnangcao.html">Giá giảm dần</a></li>
+                  </button>
+                  <select class="nut" name="" id="">
+                    <option value="A → Z">Tên A → Z</option>
+                    <option value="Z → A">Tên Z → A</option>
+                    <option value="High-cost">Giá tăng dần</option>
+                    <option value="Low-cost">Giá giảm dần</option>
+                  </select>
+                </ul>
               </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
@@ -549,6 +528,7 @@
     </div>
 
     <!-- End Modal order -->
+
   </div>
 
   <!-- End Products mon-man -->
@@ -582,7 +562,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- End Footer-top -->
 
@@ -702,9 +681,6 @@
   </div>
 
   <!-- End Footer-bottom -->
-
-
-
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
