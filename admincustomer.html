@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
   <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar">
       <div class="custom-menu">
@@ -28,20 +27,19 @@
       </div>
       <div class="img bg-wrap text-center py-4">
         <div class="user-logo">
-          <div class="inner-img">
+          <div class="inner-logo">
             <img src="assets/img/logo.png" alt="logo">
           </div>
-          <h3>Đặc sản 3 miền</h3>
         </div>
       </div>
       <ul class="list-unstyled components mb-5">
-        <li class="active">
+        <li>
           <a href="admin.html"><i class="fa-solid fa-house"></i> Trang tổng quan</a>
         </li>
         <li>
           <a href="adminproduct.html"><i class="fa-solid fa-bowl-food"></i> Sản phẩm</a>
         </li>
-        <li>
+        <li class="active">
           <a href="admincustomer.html"><i class="fa-solid fa-users"></i> Khách hàng</a>
         </li>
         <li>
@@ -51,174 +49,167 @@
           <a href="adminstatistical.html"><i class="fa-solid fa-chart-simple"></i> Thống kê</a>
         </li>
       </ul>
-
     </nav>
+
+    <!-- admincustomer  -->
+
     <div id="content">
-        <div class="section active">
-            <div class="admin-control">
-                <div class="admin-control-left">
-                    <select name="tinh-trang-user" id="tinh-trang-user" onchange="showUser()">
-                        <option value="2">Tất cả</option>
-                        <option value="1">Hoạt động</option>
-                        <option value="0">Bị khóa</option>
-                    </select>
-                </div>
-                <div class="admin-control-center">
-                    <form action="" class="form-search">
-                        <span class="search-btn"><i class="fa-light fa-magnifying-glass"></i></span>
-                        <input id="form-search-user" type="text" class="form-search-input" placeholder="Tìm kiếm khách hàng..." oninput="showUser()">
-                    </form>
-                </div>
-                <div class="admin-control-right">
-                    <form action="" class="fillter-date">
-                        <div>
-                            <label for="time-start">Từ</label>
-                            <input type="date" class="form-control-date" id="time-start-user" onchange="showUser()">
-                        </div>
-                        <div>
-                            <label for="time-end">Đến</label>
-                            <input type="date" class="form-control-date" id="time-end-user" onchange="showUser()">
-                        </div>
-                    </form>      
-                    <a href="admincustomer.html"><button class="btn-reset-order" onclick="cancelSearchUser()"><i class="fa-light fa-arrow-rotate-right"></i></button></a>     
-                    <button id="btn-add-user" class="btn-control-large" onclick="openCreateAccount()"><i class="fa-light fa-plus"></i> <span>Thêm khách hàng</span></button>          
-                </div>
-            </div>
-            <div class="table">
-                <table width="100%">
-                    <thead>
-                        <tr>
-                            <td>STT</td>
-                            <td>Họ và tên</td>
-                            <td>Liên hệ</td>
-                            <td>Ngày tham gia</td>
-                            <td>Tình trạng</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody id="show-user">
-                    <tr>
-                        <td>1</td>
-                        <td>Nhat sinh</td>
-                        <td>0383726193</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-complete">Hoạt động</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Dai</td>
-                        <td>0123456789</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-no-complete">Bị khóa</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nhat sinh</td>
-                        <td>0383726193</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-complete">Hoạt động</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Dai</td>
-                        <td>0123456789</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-no-complete">Bị khóa</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nhat sinh</td>
-                        <td>0383726193</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-complete">Hoạt động</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Dai</td>
-                        <td>0123456789</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-no-complete">Bị khóa</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nhat sinh</td>
-                        <td>0383726193</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-complete">Hoạt động</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Dai</td>
-                        <td>0123456789</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-no-complete">Bị khóa</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nhat sinh</td>
-                        <td>0383726193</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-complete">Hoạt động</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Dai</td>
-                        <td>0123456789</td>
-                        <td>25/10/2024</td>
-                        <td><span class="status-no-complete">Bị khóa</span></td>
-                        <td class="control control-table">
-                        <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
-                        <button class="btn-delete" id="delete-account" onclick="deleting()"><i class="fa-regular fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+      <div class="section active">
+        <div class="admin-control">
+          <div class="admin-control-left">
+            <select name="tinh-trang-user" id="tinh-trang-user" onchange="showUser()">
+              <option value="2">Tất cả</option>
+              <option value="1">Hoạt động</option>
+              <option value="0">Bị khóa</option>
+            </select>
+          </div>
+          <div class="admin-control-center">
+            <form action="" class="form-search">
+              <span class="search-btn"><i class="fa-light fa-magnifying-glass"></i></span>
+              <input id="form-search-user" type="text" class="form-search-input" placeholder="Tìm kiếm khách hàng..."
+                oninput="showUser()">
+            </form>
+          </div>
+          <div class="admin-control-right">
+            <form action="" class="fillter-date">
+              <div>
+                <label for="time-start">Từ</label>
+                <input type="date" class="form-control-date" id="time-start-user" onchange="showUser()">
+              </div>
+              <div>
+                <label for="time-end">Đến</label>
+                <input type="date" class="form-control-date" id="time-end-user" onchange="showUser()">
+              </div>
+            </form>
+            <a href="admincustomer.html"><button class="btn-reset-order" onclick="cancelSearchUser()"><i
+                  class="fa-light fa-arrow-rotate-right"></i></button></a>
+            <button id="btn-add-user" class="btn-control-large" onclick="openCreateAccount()"><i
+                class="fa-light fa-plus"></i> <span>Thêm khách hàng</span></button>
+          </div>
+        </div>
+        <div class="table">
+          <table width="100%">
+            <thead>
+              <tr>
+                <td>STT</td>
+                <td>Họ và tên</td>
+                <td>Liên hệ</td>
+                <td>Ngày tham gia</td>
+                <td>Tình trạng</td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody id="show-user">
+  
+              <tr>
+                <td>1</td>
+                <td>Thanh</td>
+                <td>0909098386</td>
+                <td>20/11/2024</td>
+                <td><span class="status-complete">Hoạt động</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Lu Nhan</td>
+                <td>0383726193</td>
+                <td>27/10/2024</td>
+                <td><span class="status-complete">Hoạt động</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Nguyen Hoang</td>
+                <td>0123456788</td>
+                <td>28/10/2024</td>
+                <td><span class="status-complete">Hoạt động</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Bao Khang</td>
+                <td>0383726113</td>
+                <td>28/10/2024</td>
+                <td><span class="status-no-complete">Bị khóa</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Gia Hung</td>
+                <td>0123456489</td>
+                <td>28/10/2024</td>
+                <td><span class="status-no-complete">Bị khóa</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Le Hien</td>
+                <td>0383725793</td>
+                <td>29/10/2024</td>
+                <td><span class="status-complete">Hoạt động</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Dang Khoa</td>
+                <td>0123458789</td>
+                <td>01/11/2024</td>
+                <td><span class="status-complete">Hoạt động</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Nguyen Dai</td>
+                <td>0126758789</td>
+                <td>01/11/2024</td>
+                <td><span class="status-complete">Hoạt động</span></td>
+                <td class="control control-table">
+                  <button class="btn-edit" id="edit-account"><i class="fa-light fa-pen-to-square"></i></button>
+                  <button class="btn-delete" id="delete-account" onclick="deleting()"><i
+                      class="fa-regular fa-trash"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-      <script src="/Webbandoan/admin/js/jquery.min.js"></script>
-      <script src="/Webbandoan/admin/js/bootstrap.min.js"></script>
-      <script src="/Webbandoan/admin/js/main.js"></script>
-      <script src="/Webbandoan/admin/js/popper.js"></script>
-      <script>
-         function deleting(){
-            alert("Đã xóa thành công");
-        }
-      </script>
+  </div>
+
+  <!-- End admincustomer  -->
+
+  <script src="admin/js/jquery.min.js"></script>
+  <script src="admin/js/bootstrap.min.js"></script>
+  <script src="admin/js/main.js"></script>
+  <script src="admin/js/popper.js"></script>
 </body>
 
 </html>

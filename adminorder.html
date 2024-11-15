@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/admin.css">
 
-  <title>Admin</title>
+  <title>Quản lý cửa hàng</title>
   <link href='/Webbandoan/assets/img/logo.png' rel='icon' type='image/x-icon' />
 </head>
 
@@ -28,14 +28,13 @@
       </div>
       <div class="img bg-wrap text-center py-4">
         <div class="user-logo">
-          <div class="inner-img">
+          <div class="inner-logo">
             <img src="assets/img/logo.png" alt="logo">
           </div>
-          <h3>Đặc sản 3 miền</h3>
         </div>
       </div>
       <ul class="list-unstyled components mb-5">
-        <li class="active">
+        <li>
           <a href="admin.html"><i class="fa-solid fa-house"></i> Trang tổng quan</a>
         </li>
         <li>
@@ -44,167 +43,135 @@
         <li>
           <a href="admincustomer.html"><i class="fa-solid fa-users"></i> Khách hàng</a>
         </li>
-        <li>
+        <li class="active">
           <a href="adminorder.html"><i class="fa-solid fa-basket-shopping"></i> Đơn hàng</a>
         </li>
         <li>
           <a href="adminstatistical.html"><i class="fa-solid fa-chart-simple"></i> Thống kê</a>
         </li>
       </ul>
-
     </nav>
-    <div id="content" class="container">
-        <main class="content">
-        <div class="section active">
-            <div class="admin-control">
-                <div class="admin-control-left">
-                    <select name="tinh-trang" id="tinh-trang" onchange="findOrder()">
-                        <option value="2">Tất cả</option>
-                        <option value="1">Đã xử lý</option>
-                        <option value="0">Chưa xử lý</option>
-                    </select>
-                </div>
-                <div class="admin-control-center">
-                    <form action="" class="form-search">
-                        <span class="search-btn"><i class="fa-light fa-magnifying-glass"></i></span>
-                        <input id="form-search-order" type="text" class="form-search-input" placeholder="Tìm kiếm mã đơn, khách hàng..." oninput="findOrder()">
-                    </form>
-                </div>
-                <div class="admin-control-right">
-                    <form action="" class="fillter-date">
-                        <div>
-                            <label for="time-start">Từ</label>
-                            <input type="date" class="form-control-date" id="time-start" onchange="findOrder()">
-                        </div>
-                        <div>
-                            <label for="time-end">Đến</label>
-                            <input type="date" class="form-control-date" id="time-end" onchange="findOrder()">
-                        </div>
-                    </form>      
-                    <a href="adminorder.html"><button class="btn-reset-order" onclick="cancelSearchOrder()"><i class="fa-light fa-arrow-rotate-right"></i></button></a>              
-                </div>
-            </div>
-            <div class="table">
-                <table width="100%">
-                    <thead>
-                        <tr>
-                            <td>Mã đơn</td>
-                            <td>Khách hàng</td>
-                            <td>Ngày đặt</td>
-                            <td>Tổng tiền</td>
-                            <td>Trạng thái</td>
-                            <td>Thao tác</td>
-                        </tr>
-                    </thead>
-                    <tbody id="showOrder">
-                        <tr>
-                            <td>DH3</td>
-                            <td>hgbaodev</td>
-                            <td>28/10/2024</td>
-                            <td>540.000&nbsp;₫</td>                               
-                            <td><span class="status-no-complete">Chưa xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH2</td>
-                            <td>0767100769</td>
-                            <td>15/10/2024</td>
-                            <td>75.000&nbsp;₫</td>                               
-                            <td><span class="status-complete">Đã xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH3</td>
-                            <td>hgbaodev</td>
-                            <td>28/10/2024</td>
-                            <td>540.000&nbsp;₫</td>                               
-                            <td><span class="status-no-complete">Chưa xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH2</td>
-                            <td>0767100769</td>
-                            <td>15/10/2024</td>
-                            <td>75.000&nbsp;₫</td>                               
-                            <td><span class="status-complete">Đã xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH3</td>
-                            <td>hgbaodev</td>
-                            <td>28/10/2024</td>
-                            <td>540.000&nbsp;₫</td>                               
-                            <td><span class="status-no-complete">Chưa xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH2</td>
-                            <td>0767100769</td>
-                            <td>15/10/2024</td>
-                            <td>75.000&nbsp;₫</td>                               
-                            <td><span class="status-complete">Đã xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH3</td>
-                            <td>hgbaodev</td>
-                            <td>28/10/2024</td>
-                            <td>540.000&nbsp;₫</td>                               
-                            <td><span class="status-no-complete">Chưa xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH2</td>
-                            <td>0767100769</td>
-                            <td>15/10/2024</td>
-                            <td>75.000&nbsp;₫</td>                               
-                            <td><span class="status-complete">Đã xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH3</td>
-                            <td>hgbaodev</td>
-                            <td>28/10/2024</td>
-                            <td>540.000&nbsp;₫</td>                               
-                            <td><span class="status-no-complete">Chưa xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DH2</td>
-                            <td>0767100769</td>
-                            <td>15/10/2024</td>
-                            <td>75.000&nbsp;₫</td>                               
-                            <td><span class="status-complete">Đã xử lý</span></td>
-                            <td class="control">
-                            <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+    <!-- adminorder  -->
+
+    <div id="content">
+      <div class="section active">
+        <div class="admin-control">
+          <div class="admin-control-left">
+            <select name="tinh-trang" id="tinh-trang" onchange="findOrder()">
+              <option value="2">Tất cả</option>
+              <option value="1">Đã xử lý</option>
+              <option value="0">Chưa xử lý</option>
+            </select>
+          </div>
+          <div class="admin-control-center">
+            <form action="" class="form-search">
+              <span class="search-btn"><i class="fa-light fa-magnifying-glass"></i></span>
+              <input id="form-search-order" type="text" class="form-search-input"
+                placeholder="Tìm kiếm mã đơn, khách hàng..." oninput="findOrder()">
+            </form>
+          </div>
+          <div class="admin-control-right">
+            <form action="" class="fillter-date">
+              <div>
+                <label for="time-start">Từ</label>
+                <input type="date" class="form-control-date" id="time-start" onchange="findOrder()">
+              </div>
+              <div>
+                <label for="time-end">Đến</label>
+                <input type="date" class="form-control-date" id="time-end" onchange="findOrder()">
+              </div>
+            </form>
+            <a href="adminorder.html"><button class="btn-reset-order" onclick="cancelSearchOrder()"><i
+                  class="fa-light fa-arrow-rotate-right"></i></button></a>
+          </div>
         </div>
-      <script src="/Webbandoan/admin/js/jquery.min.js"></script>
-      <script src="/Webbandoan/admin/js/bootstrap.min.js"></script>
-      <script src="/Webbandoan/admin/js/main.js"></script>
-      <script src="/Webbandoan/admin/js/popper.js"></script>
+        <div class="table">
+          <table width="100%">
+            <thead>
+              <tr>
+                <td>Mã đơn</td>
+                <td>Khách hàng</td>
+                <td>Ngày đặt</td>
+                <td>Tổng tiền</td>
+                <td>Trạng thái</td>
+                <td>Thao tác</td>
+              </tr>
+            </thead>
+            <tbody id="showOrder">
+              <tr>
+                <td>DH1</td>
+                <td>Thanh </td>
+                <td>20/11/2024</td>
+                <td>330.000&nbsp;₫</td>
+                <td><span class="status-complete">Đã xử lý</span></td>
+                <td class="control">
+                  <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
+                </td>
+              </tr>
+              <tr>
+                <td>DH2</td>
+                <td>Dang Khoa</td>
+                <td>28/10/2024</td>
+                <td>75.000&nbsp;₫</td>
+                <td><span class="status-complete">Đã xử lý</span></td>
+                <td class="control">
+                  <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
+                </td>
+              </tr>
+              <tr>
+                <td>DH3</td>
+                <td>Bao Khang</td>
+                <td>28/10/2024</td>
+                <td>540.000&nbsp;₫</td>
+                <td><span class="status-complete">Đã xử lý</span></td>
+                <td class="control">
+                  <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
+                </td>
+              </tr>
+              <tr>
+                <td>DH4</td>
+                <td>Le Hien</td>
+                <td>02/11/2024</td>
+                <td>75.000&nbsp;₫</td>
+                <td><span class="status-complete">Đã xử lý</span></td>
+                <td class="control">
+                  <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
+                </td>
+              </tr>
+              <tr>
+                <td>DH5</td>
+                <td>Gia Hung</td>
+                <td>02/11/2024</td>
+                <td>540.000&nbsp;₫</td>
+                <td><span class="status-no-complete">Chưa xử lý</span></td>
+                <td class="control">
+                  <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
+                </td>
+              </tr>
+              <tr>
+                <td>DH6</td>
+                <td>Nguyen Dai</td>
+                <td>12/11/2024</td>
+                <td>75.000&nbsp;₫</td>
+                <td><span class="status-no-complete">Chưa xử lý</span></td>
+                <td class="control">
+                  <button class="btn-detail" id=""><i class="fa-regular fa-eye"></i> Chi tiết</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End adminorder  -->
+
+  <script src="admin/js/jquery.min.js"></script>
+  <script src="admin/js/bootstrap.min.js"></script>
+  <script src="admin/js/main.js"></script>
+  <script src="admin/js/popper.js"></script>
 </body>
 
 </html>
