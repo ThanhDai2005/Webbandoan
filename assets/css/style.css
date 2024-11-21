@@ -661,6 +661,10 @@
   .Products .inner-info {
     padding: 8px 10px;
   }
+
+  .Products .inner-muahang {
+    width: 100px;
+  }
 }
 
 /* Modal order */
