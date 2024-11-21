@@ -1,5 +1,5 @@
-document.querySelectorAll('.inner-img a').forEach(function (anchor) {
-  anchor.addEventListener('click', function (event) {
+document.querySelectorAll('.inner-img a').forEach(function (item) {
+  item.addEventListener('click', function (event) {
     event.preventDefault();
 
   });
