@@ -330,6 +330,7 @@ button {
 
 .admin-product .list .list-left {
   display: flex;
+  width: 80%;
 }
 
 .admin-product .list .list-left img {
@@ -346,6 +347,11 @@ button {
   color: #0000008a;
   font-size: 14px;
   margin-right: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
 }
 
 .admin-product .list-info h4 {
@@ -797,11 +803,12 @@ tbody tr td {
 }
 
 .admin-order .modal-footer .inner-giaca .inner-chu {
-  font-size: 13px;
+  font-size: 14px;
   color: #808080;
 }
 
 .admin-order .modal-footer .inner-giaca .inner-so {
+  font-size: 18px;
   font-weight: 500;
   color: var(--color-bg2);
 }
@@ -836,6 +843,53 @@ tbody tr td {
   border-radius: 5px;
   background-color: #f7f7f7;
   margin-bottom: 0;
+}
+
+.admin-order .modal-footer {
+  display: block;
+}
+
+.admin-order .modal-footer .inner-tien {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-order .modal-footer .inner-tien .inner-th {
+  font-size: 15px;
+}
+
+.admin-order .modal-footer .inner-tien .inner-th span {
+  font-size: 14px;
+  color: var(--color-bg2);
+}
+
+.admin-order .modal-footer .inner-tien .inner-st {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.admin-order .modal-footer .inner-vanchuyen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-order .modal-footer .inner-vanchuyen .inner-vc1 {
+  font-size: 15px;
+}
+
+.admin-order .modal-footer .inner-vanchuyen .inner-vc2 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.admin-order .modal-footer .inner-tonggia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .admin-order .modal-body .inner-diachi i {

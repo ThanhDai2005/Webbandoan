@@ -1676,6 +1676,10 @@ td {
   cursor: pointer;
 }
 
+.Products.mon-man input[type="checkbox"] {
+  accent-color: var(--color-bg2);
+}
+
 .Products.mon-man .inner-monman {
   font-size: 24px;
   font-weight: 600;
