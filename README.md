@@ -11,4 +11,4 @@
 
 ### Hình ảnh giao diện
 
-![Alt text](./assets/img/img-github/banner.jpg)
+![Alt text](./assets/img/GiaoDienWebbandoan.png)
