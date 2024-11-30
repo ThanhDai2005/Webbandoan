@@ -286,100 +286,309 @@
 
     <!-- End header bottom  -->
 
-    <!-- ChiTiet -->
+    <!-- ChiTietSP -->
 
-    <div class="chitiet">
+    <div class="chitietSP">
       <div class="container">
-        <div class="inner-chitiet">
-          <div class="inner-tt">Chi tiết đơn hàng DH1</div>
-          <div class="inner-vc">Ngày đặt hàng: 20/11/2024</div>
-        </div>
-        <div class="inner-trangthai">
-          <div class="inner-ct">
-            Trạng thái thanh toán: <i>Đã thanh toán</i>
-          </div>
-          <div class="inner-ngay">
-            Trạng thái vận chuyển: <i>Đã giao hàng</i>
-          </div>
-        </div>
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="inner-diachi">
-              <div class="inner-ten">ĐỊA CHỈ GIAO HÀNG</div>
-              <div class="inner-gth">
-                <div class="inner-ten">CAO THÁI PHƯƠNG THANH</div>
-                <div class="inner-dc">
-                  Địa chỉ: 273 An Dương Vương, Phường 3, Quận 5, TP Hồ Chí Minh
+          <div class="col-xl-9">
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="inner-image">
+                  <div class="inner-img">
+                    <img src="assets/img/products/phobo.jpg" />
+                  </div>
                 </div>
-                <div class="inner-sdt">Số điện thoại: 0909098386</div>
+              </div>
+              <div class="col-xl-7">
+                <div class="inner-content">
+                  <div class="inner-ten">Phở bò</div>
+                  <div class="inner-tt">
+                    Trạng thái:
+                    <span class="inner-conhang"
+                      ><i class="fa-solid fa-check"></i>Còn món</span
+                    >
+                  </div>
+                  <div class="inner-gia">50.000 ₫</div>
+                  <div class="inner-desc">
+                    Phở là món ăn đặc trưng của Việt Nam với nước dùng trong
+                    vắt, đậm đà từ xương và gia vị. Sợi phở mềm, thường được ăn
+                    kèm với thịt bò hoặc gà thái mỏng, rau thơm, chanh và ớt. Vị
+                    thanh mát, thơm ngon của phở khiến người ăn dễ dàng mê mẩn
+                    ngay từ lần thử đầu tiên. Phở không chỉ ngon mà còn mang đậm
+                    hương vị truyền thống của ẩm thực Việt.
+                  </div>
+                </div>
+                <div class="inner-add">
+                  <div class="inner-sl">Số lượng:</div>
+                  <div class="inner-tanggiam">
+                    <span id="giam" class="inner-tru">-</span>
+                    <input
+                      id="tanggiam"
+                      type="text"
+                      value="1"
+                      class="inner-so"
+                    />
+                    <span id="tang" class="inner-cong">+</span>
+                  </div>
+                  <button type="button" onclick="thanhToan()" class="inner-nut">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="inner-thongtin">
+                  <div class="inner-nut">
+                    <button class="inner-mt inner-mt-active">Mô tả</button>
+                    <button class="inner-mt">Đánh giá</button>
+                  </div>
+                  <div class="inner-mota">
+                    <div class="inner-nd">
+                      <h2 class="inner-title">1. NGUYÊN LIỆU</h2>
+                      <p class="inner-desc">
+                        Phở là món ăn đặc trưng của Việt Nam với nước dùng trong
+                        vắt, đậm đà từ xương và gia vị. Sợi phở mềm, thường được
+                        ăn kèm với thịt bò hoặc gà thái mỏng, rau thơm, chanh và
+                        ớt. Vị thanh mát, thơm ngon của phở khiến người ăn dễ
+                        dàng mê mẩn ngay từ lần thử đầu tiên. Phở không chỉ ngon
+                        mà còn mang đậm hương vị truyền thống của ẩm thực Việt.
+                      </p>
+                    </div>
+                    <div class="inner-nd">
+                      <h2 class="inner-title">1. NGUYÊN LIỆU</h2>
+                      <p class="inner-desc">
+                        Phở là món ăn đặc trưng của Việt Nam với nước dùng trong
+                        vắt, đậm đà từ xương và gia vị. Sợi phở mềm, thường được
+                        ăn kèm với thịt bò hoặc gà thái mỏng, rau thơm, chanh và
+                        ớt. Vị thanh mát, thơm ngon của phở khiến người ăn dễ
+                        dàng mê mẩn ngay từ lần thử đầu tiên. Phở không chỉ ngon
+                        mà còn mang đậm hương vị truyền thống của ẩm thực Việt.
+                      </p>
+                    </div>
+                    <div class="inner-nd">
+                      <h2 class="inner-title">1. NGUYÊN LIỆU</h2>
+                      <p class="inner-desc">
+                        Phở là món ăn đặc trưng của Việt Nam với nước dùng trong
+                        vắt, đậm đà từ xương và gia vị. Sợi phở mềm, thường được
+                        ăn kèm với thịt bò hoặc gà thái mỏng, rau thơm, chanh và
+                        ớt. Vị thanh mát, thơm ngon của phở khiến người ăn dễ
+                        dàng mê mẩn ngay từ lần thử đầu tiên. Phở không chỉ ngon
+                        mà còn mang đậm hương vị truyền thống của ẩm thực Việt.
+                      </p>
+                    </div>
+                    <div class="inner-nd">
+                      <h2 class="inner-title">1. NGUYÊN LIỆU</h2>
+                      <p class="inner-desc">
+                        Phở là món ăn đặc trưng của Việt Nam với nước dùng trong
+                        vắt, đậm đà từ xương và gia vị. Sợi phở mềm, thường được
+                        ăn kèm với thịt bò hoặc gà thái mỏng, rau thơm, chanh và
+                        ớt. Vị thanh mát, thơm ngon của phở khiến người ăn dễ
+                        dàng mê mẩn ngay từ lần thử đầu tiên. Phở không chỉ ngon
+                        mà còn mang đậm hương vị truyền thống của ẩm thực Việt.
+                      </p>
+                    </div>
+                    <div class="inner-nd">
+                      <h2 class="inner-title">1. NGUYÊN LIỆU</h2>
+                      <p class="inner-desc">
+                        Phở là món ăn đặc trưng của Việt Nam với nước dùng trong
+                        vắt, đậm đà từ xương và gia vị. Sợi phở mềm, thường được
+                        ăn kèm với thịt bò hoặc gà thái mỏng, rau thơm, chanh và
+                        ớt. Vị thanh mát, thơm ngon của phở khiến người ăn dễ
+                        dàng mê mẩn ngay từ lần thử đầu tiên. Phở không chỉ ngon
+                        mà còn mang đậm hương vị truyền thống của ẩm thực Việt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-            <div class="inner-diachi">
-              <div class="inner-ten">THANH TOÁN</div>
-              <div class="inner-gth">
-                <div class="inner-tt">Thanh toán khi giao hàng</div>
+          <div class="col-xl-3">
+            <div class="inner-danhmuc">
+              <div class="inner-dm">
+                <div class="inner-hinh">
+                  <img src="assets/img/service_1.webp" />
+                </div>
+                <div class="inner-chu">GIAO HÀNG NHANH</div>
+              </div>
+              <div class="inner-dm">
+                <div class="inner-hinh">
+                  <img src="assets/img/service_2.png" />
+                </div>
+                <div class="inner-chu">HOÀN TIỀN NẾU KHÔNG NGON</div>
+              </div>
+              <div class="inner-dm">
+                <div class="inner-hinh">
+                  <img src="assets/img/service_3.webp" />
+                </div>
+                <div class="inner-chu">SẢN PHẨM AN TOÀN</div>
+              </div>
+              <div class="inner-dm">
+                <div class="inner-hinh">
+                  <img src="assets/img/service_4.webp" />
+                </div>
+                <div class="inner-chu">HỖ TRỢ 24/7</div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-            <div class="inner-diachi">
-              <div class="inner-ten">GHI CHÚ</div>
-              <div class="inner-gth">
-                <div class="inner-ghichu">Không có ghi chú</div>
+
+            <div class="inner-noibat">
+              <div class="inner-nb">SẢN PHẨM NỔI BẬT</div>
+              <div class="inner-sp">
+                <div class="inner-item">
+                  <div class="inner-anh">
+                    <img src="assets/img/products/banhmi.webp" />
+                  </div>
+                  <div class="inner-mota">
+                    <div class="inner-ten">Bánh mì</div>
+                    <div class="inner-gia">20.000 ₫</div>
+                  </div>
+                </div>
+                <div class="inner-item">
+                  <div class="inner-anh">
+                    <img src="assets/img/products/bunbohue.jpg" />
+                  </div>
+                  <div class="inner-mota">
+                    <div class="inner-ten">Bún bò Huế</div>
+                    <div class="inner-gia">50.000 ₫</div>
+                  </div>
+                </div>
+                <div class="inner-item">
+                  <div class="inner-anh">
+                    <img src="assets/img/products/bunbohue.jpg" />
+                  </div>
+                  <div class="inner-mota">
+                    <div class="inner-ten">Bún bò Huế</div>
+                    <div class="inner-gia">50.000 ₫</div>
+                  </div>
+                </div>
+                <div class="inner-item">
+                  <div class="inner-anh">
+                    <img src="assets/img/products/bunbohue.jpg" />
+                  </div>
+                  <div class="inner-mota">
+                    <div class="inner-ten">Bún bò Huế</div>
+                    <div class="inner-gia">50.000 ₫</div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="inner-menu">
-          <div class="inner-item">
-            <div class="inner-info">
-              <div class="inner-img">
-                <img src="assets/img/products/banhmi.webp" />
-              </div>
-              <div class="inner-chu">
-                <div class="inner-ten">Bánh mì</div>
-                <div class="inner-sl">x1</div>
-              </div>
-            </div>
-            <div class="inner-gia">20.000 ₫</div>
-          </div>
-          <div class="inner-item">
-            <div class="inner-info">
-              <div class="inner-img">
-                <img
-                  src="assets/img/products/bunbohue.jpg"
-                  width="80px"
-                  height="80px"
-                />
-              </div>
-              <div class="inner-chu">
-                <div class="inner-ten">Bún bò Huế</div>
-                <div class="inner-sl">x1</div>
-              </div>
-            </div>
-            <div class="inner-gia">50.000 ₫</div>
-          </div>
-          <div class="inner-tonggia">
-            <div class="inner-tien">
-              <div class="inner-th">Tiền hàng <span>2 món</span></div>
-              <div class="inner-st">70.000 ₫</div>
-            </div>
-            <div class="inner-vanchuyen">
-              <span class="inner-vc1">Vận chuyển</span>
-              <span class="inner-vc2">30.000 ₫</span>
-            </div>
-            <div class="inner-total">
-              <span class="inner-tong1">Tổng tiền:</span>
-              <span class="inner-tong2">100.000 ₫</span>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- End ChiTiet -->
+    <!-- End ChiTietSP -->
+
+    <!-- San Pham -->
+
+    <div class="SanPham">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-head">
+              <div class="inner-title">Sản phẩm liên quan</div>
+              <p class="inner-desc">
+                Có phải bạn đang tìm những sản phẩm dưới đây
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="inner-item">
+              <div
+                class="inner-img"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                <a href="#"><img src="assets/img/products/banhmi.webp" /></a>
+              </div>
+              <div class="inner-info">
+                <div class="inner-ten">Bánh mì</div>
+                <div class="inner-gia">20.000 ₫</div>
+                <button
+                  type="button"
+                  class="inner-muahang"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="inner-item">
+              <div
+                class="inner-img"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                <a href="#"><img src="assets/img/products/banhmi.webp" /></a>
+              </div>
+              <div class="inner-info">
+                <div class="inner-ten">Bánh mì</div>
+                <div class="inner-gia">20.000 ₫</div>
+                <button
+                  type="button"
+                  class="inner-muahang"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="inner-item">
+              <div
+                class="inner-img"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                <a href="#"><img src="assets/img/products/banhmi.webp" /></a>
+              </div>
+              <div class="inner-info">
+                <div class="inner-ten">Bánh mì</div>
+                <div class="inner-gia">20.000 ₫</div>
+                <button
+                  type="button"
+                  class="inner-muahang"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="inner-item">
+              <div
+                class="inner-img"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                <a href="#"><img src="assets/img/products/banhmi.webp" /></a>
+              </div>
+              <div class="inner-info">
+                <div class="inner-ten">Bánh mì</div>
+                <div class="inner-gia">20.000 ₫</div>
+                <button
+                  type="button"
+                  class="inner-muahang"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  <i class="fa-solid fa-cart-plus"></i> ĐẶT MÓN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End San Pham -->
 
     <!-- Footer-top -->
 

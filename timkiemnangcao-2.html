@@ -34,7 +34,7 @@
       <div class="container">
         <div class="inner-wrap">
           <div class="inner-left">
-            <a href="login.html"
+            <a href="index.html"
               ><img src="assets/img/logo.png" alt="logo"
             /></a>
           </div>
@@ -42,7 +42,7 @@
           <div class="inner-middle">
             <form action="" class="inner-find">
               <input type="text" placeholder="Tìm Kiếm món ăn..." />
-              <a href="timkiem-login.html" class="inner-button-find">
+              <a href="timkiem.html" class="inner-button-find">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </a>
             </form>
@@ -70,19 +70,22 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <div class="inner-register">Tài khoản</div>
-                <div class="nav-link dropdown-toggle">Thanh</div>
+                <div class="inner-register">Đăng nhập / Đăng ký</div>
+                <div class="nav-link dropdown-toggle">Tài khoản</div>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="account.html"
-                    ><i class="fa-regular fa-circle-user"></i>Tài khoản của
-                    tôi</a
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    ><i class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a
                   >
-                  <a class="dropdown-item" href="productss.html"
-                    ><i class="fa-solid fa-cart-shopping"></i>Đơn hàng đã mua</a
-                  >
-                  <a class="dropdown-item" href="index.html"
-                    ><i class="fa-solid fa-right-from-bracket"></i>Thoát tài
-                    khoản</a
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#exampleModal-2"
+                    ><i class="fa-solid fa-user-plus"></i>Đăng kí</a
                   >
                 </div>
               </a>
@@ -94,7 +97,7 @@
             >
               <div class="inner-icon">
                 <i class="fa-solid fa-basket-shopping"></i>
-                <span class="inner-so">2</span>
+                <span class="inner-so">0</span>
               </div>
               <span class="inner-text-shopping">Giỏ hàng</span>
             </div>
@@ -194,39 +197,17 @@
               </button>
             </div>
             <div class="modal-body">
-              <div class="cart-item">
-                <div class="inner-product">
-                  <img src="assets/img/products/banhmi.webp" alt="Product 1" />
-                  <div class="inner-gia">20.000 ₫</div>
-                </div>
-                <div class="inner-info">
-                  <div class="inner-ten">Bánh mì</div>
-                  <div class="buttons_added">
-                    <input class="minus is-form" type="button" value="-" />
-                    <input class="input-qty" type="text" value="1" />
-                    <input class="plus is-form" type="button" value="+" />
-                  </div>
-                </div>
+              <div class="inner-icon">
+                <i class="fa-solid fa-cart-xmark"></i>
               </div>
-              <div class="cart-item">
-                <div class="inner-product">
-                  <img src="assets/img/products/bunbohue.jpg" alt="Product 2" />
-                  <div class="inner-gia">50.000 ₫</div>
-                </div>
-                <div class="inner-info">
-                  <div class="inner-ten">Bún bò Huế</div>
-                  <div class="buttons_added">
-                    <input class="minus is-form" type="button" value="-" />
-                    <input class="input-qty" type="text" value="1" />
-                    <input class="plus is-form" type="button" value="+" />
-                  </div>
-                </div>
+              <div class="inner-desc">
+                Không có sản phẩm nào trong giỏ hàng của bạn
               </div>
             </div>
             <div class="modal-footer">
               <div class="inner-tong">
                 <div class="inner-text-tong">Tổng tiền:</div>
-                <div class="inner-gia-tong">70.000 ₫</div>
+                <div class="inner-gia-tong">0 ₫</div>
               </div>
               <div class="inner-nut">
                 <button
@@ -237,7 +218,7 @@
                 >
                   <i class="fa-solid fa-plus"></i>Thêm món
                 </button>
-                <a href="thanhtoan.html" class="inner-tt">Thanh toán</a>
+                <button class="inner-tt inner-tt-nologin">Thanh toán</button>
               </div>
             </div>
           </div>
@@ -256,28 +237,28 @@
         <div class="inner-menu">
           <ul>
             <li>
-              <a href="login.html">TRANG CHỦ</a>
+              <a href="index.html">TRANG CHỦ</a>
             </li>
             <li>
-              <a href="timkiemnangcao-login.html">MÓN CHAY</a>
+              <a href="timkiemnangcao.html">MÓN CHAY</a>
             </li>
             <li>
-              <a href="timkiemnangcao-login.html">MÓN MẶN</a>
+              <a href="timkiemnangcao.html">MÓN MẶN</a>
             </li>
             <li>
-              <a href="timkiemnangcao-login.html">MÓN LẨU</a>
+              <a href="timkiemnangcao.html">MÓN LẨU</a>
             </li>
             <li>
-              <a href="timkiemnangcao-login.html">MÓN ĂN VẶT</a>
+              <a href="timkiemnangcao.html">MÓN ĂN VẶT</a>
             </li>
             <li>
-              <a href="timkiemnangcao-login.html">MÓN TRÁNG MIỆNG</a>
+              <a href="timkiemnangcao.html">MÓN TRÁNG MIỆNG</a>
             </li>
             <li>
-              <a href="timkiemnangcao-login.html">NƯỚC UỐNG</a>
+              <a href="timkiemnangcao.html">NƯỚC UỐNG</a>
             </li>
             <li>
-              <a href="timkiemnangcao-login.html">MÓN KHÁC</a>
+              <a href="timkiemnangcao.html">MÓN KHÁC</a>
             </li>
           </ul>
         </div>
@@ -296,7 +277,7 @@
               <div class="inner-name">Bộ lọc</div>
               <div class="inner-timkiem">
                 <input type="text" placeholder="Tìm kiếm món ăn..." />
-                <a href="timkiemnangcao-login2.html" class="inner-tk"
+                <a href="timkiemnangcao-login.html" class="inner-tk"
                   ><i class="fa-solid fa-magnifying-glass"></i
                 ></a>
               </div>
@@ -363,20 +344,16 @@
           <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
             <div class="row">
               <div class="col-xl-12">
-                <div class="inner-monman">Món mặn</div>
+                <div class="inner-monman">Kết quả tìm kiếm</div>
               </div>
               <div class="col-xl-12">
                 <div class="inner-loc">
                   <span class="inner-sapxep">Sắp xếp:</span>
                   <ul>
-                    <li><a href="timkiemnangcao-login.html">Tên A → Z</a></li>
-                    <li><a href="timkiemnangcao-login.html">Tên Z → A</a></li>
-                    <li>
-                      <a href="timkiemnangcao-login.html">Giá tăng dần</a>
-                    </li>
-                    <li>
-                      <a href="timkiemnangcao-login.html">Giá giảm dần</a>
-                    </li>
+                    <li><a href="timkiemnangcao.html">Tên A → Z</a></li>
+                    <li><a href="timkiemnangcao.html">Tên Z → A</a></li>
+                    <li><a href="timkiemnangcao.html">Giá tăng dần</a></li>
+                    <li><a href="timkiemnangcao.html">Giá giảm dần</a></li>
                     <select class="nut" name="" id="">
                       <option value="A → Z">Tên A → Z</option>
                       <option value="Z → A">Tên Z → A</option>
@@ -565,7 +542,7 @@
                     <a href="#"><img src="assets/img/products/hutieu.jpg" /></a>
                   </div>
                   <div class="inner-info">
-                    <div class="inner-ten">Hủ tiếu miền Tây</div>
+                    <div class="inner-ten">Hủ tiếu</div>
                     <div class="inner-gia">30.000 ₫</div>
                     <button
                       type="button"
@@ -589,7 +566,7 @@
                   </div>
                   <div class="inner-info">
                     <div class="inner-ten">Chả cá Lã Vọng</div>
-                    <div class="inner-gia">30.000 ₫</div>
+                    <div class="inner-gia">40.000 ₫</div>
                     <button
                       type="button"
                       class="inner-muahang"
@@ -685,31 +662,23 @@
                 <ul>
                   <li>
                     <a
-                      href="timkiemnangcao-login.html"
+                      href="timkiemnangcao.html"
                       class="inner-trang trang-chinh"
                     >
                       1
                     </a>
                   </li>
                   <li>
-                    <a href="timkiemnangcao-login.html" class="inner-trang">
-                      2
-                    </a>
+                    <a href="timkiemnangcao.html" class="inner-trang"> 2 </a>
                   </li>
                   <li>
-                    <a href="timkiemnangcao-login.html" class="inner-trang">
-                      3
-                    </a>
+                    <a href="timkiemnangcao.html" class="inner-trang"> 3 </a>
                   </li>
                   <li>
-                    <a href="timkiemnangcao-login.html" class="inner-trang">
-                      4
-                    </a>
+                    <a href="timkiemnangcao.html" class="inner-trang"> 4 </a>
                   </li>
                   <li>
-                    <a href="timkiemnangcao-login.html" class="inner-trang">
-                      5
-                    </a>
+                    <a href="timkiemnangcao.html" class="inner-trang"> 5 </a>
                   </li>
                 </ul>
               </div>
@@ -770,7 +739,7 @@
                 <div class="inner-so">50.000 ₫</div>
               </div>
               <div class="inner-thanhtoan">
-                <button type="button" class="inner-nut1" onclick="thanhToan()">
+                <button type="button" class="inner-nut1" onclick="notLogin()">
                   Thêm vào giỏ hàng <i class="fa-solid fa-basket-shopping"></i>
                 </button>
               </div>
