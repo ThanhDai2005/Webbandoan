@@ -596,7 +596,8 @@
 
 .Products .inner-img {
   overflow: hidden;
-  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
 }
 
 .Products .inner-img img {
@@ -654,6 +655,7 @@
 
   .Products .inner-img {
     margin-bottom: 0;
+    width: 155px;
   }
 
   .Products .inner-img img {
@@ -1806,14 +1808,8 @@ td {
   padding-bottom: 30px;
 }
 
-.chitietSP .inner-hinhanh .inner-img img {
-  width: 60.44px;
-  height: 60.44px;
-  object-fit: cover;
-}
-
 .chitietSP .inner-img img {
-  width: 336px;
+  width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -2045,6 +2041,12 @@ td {
   font-size: 15px;
 }
 
+@media (max-width: 500px) {
+  .chitietSP {
+    padding-top: 100px;
+  }
+}
+
 /* End ChiTietSP */
 
 /* SanPham */
@@ -2111,7 +2113,8 @@ td {
 
 .SanPham .inner-item .inner-img {
   overflow: hidden;
-  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
 }
 
 .SanPham .inner-item .inner-img img {
@@ -2169,6 +2172,7 @@ td {
 
   .SanPham .inner-item .inner-img {
     margin-bottom: 0;
+    width: 155px;
   }
 
   .SanPham .inner-item .inner-img img {
