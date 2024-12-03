@@ -57,13 +57,13 @@ h5,
   color: var(--color-text);
 }
 
-#sidebar ul li.active>a {
+#sidebar ul li.active > a {
   color: #909090;
-  background: #F9F9F9;
+  background: #f9f9f9;
   position: relative;
 }
 
-#sidebar ul li.active>a::before {
+#sidebar ul li.active > a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -85,14 +85,14 @@ h5,
   margin-right: 16px;
 }
 
-#sidebar ul li.active>a:hover {
-  background: #F9F9F9;
+#sidebar ul li.active > a:hover {
+  background: #f9f9f9;
   border: none;
 }
 
 #sidebar ul li a:hover {
   color: var(--color-bg2);
-  background: #F9F9F9;
+  background: #f9f9f9;
   border: none;
 }
 
@@ -146,7 +146,9 @@ h5,
   padding: 20px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
   height: 500px;
   position: relative;
   margin-bottom: 20px;
@@ -402,8 +404,20 @@ button {
   margin-right: 5px;
 }
 
+.btn-edit:hover {
+  color: #000;
+}
+
+.btn-detail:hover {
+  color: #000;
+}
+
 .btn-delete {
   background-color: var(--color-bg2);
+  color: white;
+}
+
+.btn-delete:hover {
   color: white;
 }
 
@@ -513,7 +527,8 @@ button {
 
 .show-product .modal-body form textarea {
   border: 1px solid #ced4da;
-  height: 100px !important;
+  height: 120px !important;
+  padding: 15px;
   background-color: #f7f7f7;
   transition: all 0.3s linear;
 }
@@ -643,7 +658,7 @@ button {
 .table td {
   padding: 10px 15px;
   border-top: 1px solid #dee2e6;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 tbody tr td {
@@ -652,6 +667,15 @@ tbody tr td {
 
 .status-complete {
   background-color: #27ae60;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.status-middle-complete {
+  background-color: #2196f3;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -670,6 +694,11 @@ tbody tr td {
 
 /* Modal Add Customer */
 
+.admin-customer .modal-body label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .admin-customer .modal-body form .inner-add {
   display: flex;
   align-items: center;
@@ -682,56 +711,7 @@ tbody tr td {
   font-size: 14px;
 }
 
-.custom-switch {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.custom-control-input:checked~.custom-control-label::before {
-  color: #fff;
-  border: none;
-  background-color: var(--color-bg2);
-  transition: all 0.25s linear;
-}
-
-.custom-control-label {
-  left: -35px;
-}
-
-.custom-switch .custom-control-label::before {
-  left: 4.75rem;
-  background: #cccccc;
-  border: 0;
-  width: 40px;
-  height: 20px;
-  top: 0px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 45px;
-}
-
-.custom-control-input:focus~.custom-control-label::before {
-  box-shadow: none;
-}
-
-.custom-control-input:not(:disabled):active~.custom-control-label::before {
-  border: none;
-  background: #cccccc;
-}
-
-.custom-switch .custom-control-label::after {
-  left: calc(4.75rem + 2px);
-  transition: all 0.25s linear;
-  background: #fff;
-  top: 4px;
-}
-
-.custom-switch .custom-control-input:checked~.custom-control-label::after {
-  transform: translateX(25px);
-}
-
 /* End Modal Add Customer */
-
 
 /* End admincustomer */
 
@@ -890,11 +870,42 @@ tbody tr td {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .admin-order .modal-body .inner-diachi i {
   color: var(--color-bg2);
   margin-right: 5px;
+}
+
+.admin-order .modal-footer .inner-select {
+  display: flex;
+  align-items: center;
+}
+
+.admin-order .modal-footer label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-order .modal-footer .inner-select label {
+  margin: 0;
+}
+
+.admin-order .modal-footer .inner-select select {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.admin-order .modal-footer .inner-capnhat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-order .modal-footer .inner-capnhat .inner-nut {
+  font-size: 14px;
+  margin: 0;
 }
 
 /* End Modal Add Order */
@@ -920,7 +931,7 @@ tbody tr td {
 .order-statistical-item-content-desc {
   margin-bottom: 6px;
   font-size: 14px;
-  color: #888
+  color: #888;
 }
 
 .order-statistical-item-icon i {
@@ -963,14 +974,14 @@ tbody tr td {
 }
 
 .admin-statistical .modal-body tr {
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .admin-statistical .modal-body tr th {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
-  background: #F0F0F0;
+  background: #f0f0f0;
   padding: 15px;
   text-align: center;
 }
@@ -981,6 +992,549 @@ tbody tr td {
   white-space: nowrap;
 }
 
+.admin-statistical .Pagination {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 /* End Modal statistical */
 
 /* End adminstatistical */
+
+/* adminaddproduct */
+
+.adminaddproduct {
+  padding: 35px;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.inner-head {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.inner-head .inner-title {
+  display: inline-block;
+  border-radius: 20px;
+  background: var(--color-bg2);
+  padding: 8px 30px;
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.inner-head .inner-title::before {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background: #ffb82e;
+  top: 35%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+}
+
+.inner-head .inner-title::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background: #ffb82e;
+  top: 35%;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+}
+
+.adminaddproduct .add-product .inner-img img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.adminaddproduct .add-product .inner-choose {
+  text-align: center;
+}
+
+.adminaddproduct .add-product .inner-choose label {
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 15px;
+  background: var(--color-bg2);
+  color: #fff;
+  cursor: pointer;
+}
+
+.adminaddproduct .add-product .inner-choose label i {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.adminaddproduct .add-product .inner-choose input {
+  display: none;
+}
+
+.adminaddproduct .add-product form {
+  display: inline-block;
+  width: 100%;
+}
+
+.adminaddproduct .add-product form input {
+  border: 1px solid #ced4da;
+  font-size: 15px;
+  transition: all 0.3s linear;
+}
+
+.adminaddproduct .add-product form input:hover {
+  border: 1px solid var(--color-bg2);
+}
+
+.adminaddproduct .add-product form label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-control:focus,
+.form-control:active {
+  border-color: #ced4da;
+}
+
+.adminaddproduct .add-product form .inner-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.adminaddproduct .add-product form .inner-select label {
+  margin: 0;
+}
+
+.adminaddproduct .add-product form .inner-select select {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.adminaddproduct .add-product form textarea {
+  border: 1px solid #ced4da;
+  height: 120px !important;
+  padding: 15px;
+  background-color: #f7f7f7;
+  transition: all 0.3s linear;
+  font-size: 14px;
+}
+
+.adminaddproduct .add-product form textarea:hover {
+  border: 1px solid var(--color-bg2);
+}
+
+.adminaddproduct .add-product form .inner-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminaddproduct .add-product form .inner-add .inner-nut {
+  margin: 0;
+  font-size: 15px;
+}
+
+.adminaddproduct .add-product form .inner-add .inner-nut i {
+  margin-right: 6px;
+}
+
+.adminaddproduct .add-product .col-xl-6:nth-child(2) {
+  border-right: 1px solid #ddd;
+}
+
+/* End adminaddproduct */
+
+/* adminchitiet */
+
+.admin-chitiet {
+  padding: 35px;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.admin-chitiet .inner-head {
+  margin-bottom: 20px;
+}
+
+.admin-chitiet .col-xl-6 {
+  margin-bottom: 16px;
+}
+
+.admin-chitiet .order-chitietstart {
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.admin-chitiet .order-chitiet .inner-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.admin-chitiet .order-chitiet .inner-item .inner-info {
+  display: flex;
+}
+
+.admin-chitiet .order-chitiet .inner-item .inner-info .inner-img img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.admin-chitiet .order-chitiet .inner-item .inner-info .inner-ten {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.admin-chitiet .order-chitiet .inner-item .inner-info .inner-sl {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.admin-chitiet .order-chitiet .inner-item .inner-gia {
+  font-weight: 500;
+  color: var(--color-bg2);
+}
+
+.admin-chitiet .order-chitiet .inner-pt {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.admin-chitiet .order-chitiet .inner-pt:nth-child(1) {
+  padding-top: 0;
+}
+
+.admin-chitiet .order-chitiet .inner-pt .inner-cachthuc i {
+  color: var(--color-bg2);
+  margin-right: 5px;
+}
+
+.admin-chitiet .order-chitietend {
+  display: block;
+  padding-top: 16px;
+  border-top: 1px solid #dee2e6;
+}
+
+.admin-chitiet .order-chitietend .inner-giaca .inner-chu {
+  font-size: 15px;
+  color: #808080;
+}
+
+.admin-chitiet .order-chitietend .inner-giaca .inner-so {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-bg2);
+}
+
+.admin-chitiet .order-chitietend .inner-thanhtoan .status-complete {
+  border-radius: 45px;
+}
+
+.admin-chitiet .order-chitietend .inner-thanhtoan .status-no-complete {
+  border-radius: 45px;
+}
+
+.admin-chitiet .order-chitietend .inner-thanhtoan .status-complete i {
+  margin-right: 5px;
+}
+
+.admin-chitiet .order-chitietend .inner-thanhtoan .status-no-complete i {
+  margin-right: 5px;
+}
+
+.admin-chitiet .order-chitiet .inner-diachi {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.admin-chitiet .order-chitiet .inner-diachi .inner-desc {
+  color: #808080;
+  font-size: 15px;
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  margin-bottom: 0;
+}
+
+.admin-chitiet .order-chitietend .inner-tien {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-chitiet .order-chitietend .inner-tien .inner-th {
+  font-size: 16px;
+}
+
+.admin-chitiet .order-chitietend .inner-tien .inner-th span {
+  font-size: 15px;
+  color: var(--color-bg2);
+}
+
+.admin-chitiet .order-chitietend .inner-tien .inner-st {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.admin-chitiet .order-chitietend .inner-vanchuyen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-chitiet .order-chitietend .inner-vanchuyen .inner-vc1 {
+  font-size: 16px;
+}
+
+.admin-chitiet .order-chitietend .inner-vanchuyen .inner-vc2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.admin-chitiet .order-chitietend .inner-tonggia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-chitiet .order-chitiet .inner-diachi i {
+  color: var(--color-bg2);
+  margin-right: 5px;
+}
+
+.admin-chitiet .order-chitietend .inner-select {
+  display: flex;
+  align-items: center;
+}
+
+.admin-chitiet .order-chitietend label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.admin-chitiet .order-chitietend .inner-select label {
+  margin: 0;
+}
+
+.admin-chitiet .order-chitietend .inner-select select {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.admin-chitiet .order-chitietend .inner-capnhat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-chitiet .order-chitietend .inner-capnhat .inner-nut {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* End adminchitiet */
+
+/* adminthongkechitiet */
+
+.adminthongkechitiet {
+  padding: 35px;
+  width: 100%;
+}
+
+/* End adminthongkechitiet */
+
+/* End admin-hoadon */
+
+.admin-hoadon {
+  padding: 35px;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.admin-hoadon .hoadon .inner-chitiet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-hoadon .hoadon .inner-chitiet .inner-tt {
+  font-size: 19px;
+  margin-bottom: 27px;
+}
+
+.admin-hoadon .hoadon .inner-chitiet .inner-vc {
+  font-size: 15px;
+}
+
+.admin-hoadon .hoadon .inner-trangthai {
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.admin-hoadon .hoadon .inner-trangthai .inner-ct {
+  margin-right: 35px;
+}
+
+.admin-hoadon .hoadon .inner-trangthai .inner-ct i {
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.admin-hoadon .hoadon .inner-trangthai .inner-ngay i {
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.admin-hoadon .hoadon .inner-diachi .inner-ten {
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+.admin-hoadon .hoadon .inner-diachi .inner-gth {
+  min-height: 110px;
+  padding: 13px 25px 10px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.admin-hoadon .hoadon .inner-diachi .inner-gth .inner-ten {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.admin-hoadon .hoadon .inner-diachi .inner-gth .inner-dc {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.admin-hoadon .hoadon .inner-diachi .inner-gth .inner-sdt {
+  font-size: 15px;
+}
+
+.admin-hoadon .hoadon .inner-diachi .inner-gth .inner-tt {
+  font-size: 15px;
+}
+
+.admin-hoadon .hoadon .inner-diachi .inner-gth .inner-ghichu {
+  font-size: 15px;
+}
+
+.admin-hoadon .hoadon .inner-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 14px;
+}
+
+.admin-hoadon .hoadon .inner-menu {
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-item .inner-info {
+  display: flex;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-item .inner-ten {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-item .inner-gia {
+  color: var(--color-bg2);
+  font-weight: 700;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-tien {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-tien .inner-th {
+  font-size: 16px;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-tien .inner-th span {
+  font-size: 14px;
+  color: var(--color-bg2);
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-tien .inner-st {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-vanchuyen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-vanchuyen .inner-vc1 {
+  font-size: 16px;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-vanchuyen .inner-vc2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-total .inner-tong1 {
+  font-size: 16px;
+}
+
+.admin-hoadon .hoadon .inner-menu .inner-tonggia .inner-total .inner-tong2 {
+  color: var(--color-bg2);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* End admin-hoadon */

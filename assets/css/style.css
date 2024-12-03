@@ -2041,6 +2041,12 @@ td {
   font-size: 15px;
 }
 
+@media (max-width: 991.98px) {
+  .chitietSP .col-xl-9 {
+    border-right: none;
+  }
+}
+
 @media (max-width: 500px) {
   .chitietSP {
     padding-top: 100px;
